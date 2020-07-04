@@ -85,7 +85,7 @@ const disciplinas = [
     },{
         "codigo": "CQ059/CQ275",
         "nome": "Tópicos Especiais em Química III - Catálise",
-        "prof": "Shirley NakaGami, Marcio Peres de Araujo",
+        "prof": "Shirley Nakagami, Marcio Peres de Araujo",
         "dep": "DQUI",
         "horario": "10h00 12h00",
         "dias": [1, 2, 3],
