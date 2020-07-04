@@ -1,0 +1,121 @@
+:root {
+
+}
+
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+  background-color: white;
+}
+
+#title {
+    text-align: center;
+    width: 100vw;
+    margin-top: 50px;
+}
+
+#calendar {
+    width: 90vw;
+    min-width: 1000px;
+    margin-left: 5vw;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.box {
+    min-height: 50px;
+    min-width: 100px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 5px;
+    margin-bottom: 10px;
+    background-color: gray;
+    padding: 10px;
+    text-align: left;
+    overflow: hidden;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.box:hover {
+    filter: brightness(1.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.boxTitle {
+    font-size: 12pt;
+    font-weight: bold;
+    height: 70px;
+}
+
+.boxInfos {
+    font-size: 10pt;
+}
+
+tbody {
+    vertical-align: top;
+}
+
+#td5 {
+    max-width: 500px;
+    display: inline-flex;
+}
+
+#logo {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+}
+
+.link {
+    height: 30px;
+    padding-right: 40px;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: skyblue;
+    color: white;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  @media all and (max-width: 50em) {
+    /* #calendar {
+        display: none;
+    } */
+  }
