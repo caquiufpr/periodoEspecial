@@ -12,13 +12,20 @@
 	<body>
         <div id="title">
             <h1 style="margin-bottom: -10px; font-weight: bold;">Grade Horária do Período Especial</h1>
-            <h2>Primeiro ciclo | Curso de Química</h2>
+            <h2>Curso de Química</h2>
+            <!-- 👌 -->
         </div>
-        <p style="margin-left: 5vw; max-width: 500px; margin: auto; text-align: center; padding-bottom: 50px;">Na grade abaixo estão as disciplinas que serão ofertadas no 
+        <p style="max-width: 500px; margin: auto; text-align: center; padding: 50px; padding-top: 0; padding-bottom: 20px;">Na grade abaixo estão as disciplinas que serão ofertadas no 
             primeiro ciclo do Período Especial. Clique em cada disciplina para obter mais informações.
         </p>
+        <p style="margin-left:5.2vw; font-size: 14pt; margin-bottom: 5px; font-weight: bold;">Ciclo</p>
+        <div id="selector">
+            <div class="cycle selected" onclick="cycle(1)">1º</div>
+            <div class="cycle dis" onclick="cycle(2)">2º</div>
+            <div class="cycle dis" onclick="cycle(3)">3º</div>
+        </div>
         <table id="calendar">
-            <tr>
+        <tr>
                 <th>Segundas</th>
                 <th>Terças</th>
                 <th>Quartas</th>
@@ -28,7 +35,9 @@
             <tr id="tableItem"></tr>
         </table>
 
-        <div style="margin-left: 5vw; margin-bottom: 50px;">
+        <div id="mobile"></div>
+
+        <div id="hv" style="margin-left: 5vw; margin-bottom: 50px;">
             <h3>Disciplinas com calendário variável</h3>
             <p style="max-width: 500px;">Os dias da semana em que essas disciplinas são realizadas é variável, por isso é necessário 
                 conferir o <a target="_blank" href="https://drive.google.com/file/d/16rKRAHwgmTCKByWFg7EQzbQ9r-BL8dYl/view?usp=sharing">calendário oficial da coordenação</a>.</p>
@@ -36,21 +45,15 @@
         </div>
 
         <div style="margin-left: 5vw; margin-bottom: 100px">
-            <h3>Informações Importantes</h3>
-            <div class="box link">
-                <a target="_blank" href="https://www.siga.ufpr.br">Siga</a>
-            </div>
-            <div class="box link">
-                <a target="_blank" href="https://www.instagram.com/tv/CB0xIUdhrPG/">Tutorial Siga</a>
-            </div>
-            <div class="box link">
-                <a target="_blank" href="http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/06/resolucao-no-59-2020-cepe.pdf">Resolução Período Especial</a>
-            </div>
-            <div class="box link">
-                <a target="_blank" href="https://drive.google.com/drive/folders/1e6S_o5N5Zske2GFAHhv5v2wsn8X4D1B6?usp=sharing">Fichas das Disciplinas</a>
+            <h3>Links Úteis</h3>
+            <a class="link" target="_blank" href="https://www.siga.ufpr.br">Siga</a>
+            <a class="link" target="_blank" href="https://www.instagram.com/tv/CB0xIUdhrPG/">Tutorial Siga</a>
+            <a class="link" target="_blank" href="http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/06/resolucao-no-59-2020-cepe.pdf">Resolução Período Especial</a>
+            <a class="link" target="_blank" href="https://drive.google.com/drive/folders/1e6S_o5N5Zske2GFAHhv5v2wsn8X4D1B6?usp=sharing">Fichas das Disciplinas</a>
             </div>
         </div>
 
+        <div id="popup"></div>
         <img src="files/Logo.png" width="80px" height="80px" id="logo" alt="Logo CAQuí">
 
         <script type="text/javascript" src="script.js"></script>

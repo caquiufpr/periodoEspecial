@@ -1,4 +1,4 @@
-const disciplinas = [
+const cycle1 = [
     {
         "codigo": "EM326",
         "nome": "Prática de Ensino e Estágio Supervisionado I",
@@ -135,7 +135,7 @@ const disciplinas = [
     },{
         "codigo": "CM301",
         "nome": "Cálculo em uma Variável Real",
-        "prof": "Não informado",
+        "prof": "Carlos Roberto Vianna",
         "dep": "DMAT",
         "horario": "19h00 21h00",
         "dias": [3],
@@ -185,10 +185,12 @@ const disciplinas = [
     }
 ];
 
-const diasDaSemana = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Horário variado"]
+const diasDaSemana = ["Segundas", "Terças", "Quartas", "Quintas", "Sextas", "Horário Variado"]
 let hue = -20;
+let selectedCycle = 1;
 
 let spaceToFill = document.getElementById("tableItem");
+let spaceToFillM = document.getElementById("mobile");
 
 for (let i = 0; i <= 4; i++) {
     const cell = document.createElement('td');
@@ -196,89 +198,135 @@ for (let i = 0; i <= 4; i++) {
     spaceToFill.appendChild(cell);
 }
 
+if (window.innerWidth / window.innerHeight < 1) {
+    for (let i = 0; i <= 4; i++) {
+        const mcell = document.createElement('div');
+        mcell.id = "mc" + i;
+        mcell.innerHTML += "<h4>" + diasDaSemana[i] + "</h4>"
+        spaceToFillM.appendChild(mcell);
+    }
+
+    const mcell = document.createElement('div');
+    mcell.id = "mc5";
+    mcell.innerHTML += "<h4>" + document.getElementById('hv').innerHTML + "</h4>"
+    spaceToFillM.appendChild(mcell);
+}
+
 let id = 0;
 
-disciplinas.map(d => {
-    // Append to table
-    for (let i = 0; i < d.dias.length; i++) {
+function inflateScreen() {
 
-        // Create elements
-        const el = document.createElement('div');
-        const title = document.createElement('div');
-        const prof = document.createElement('div');
-        const dep = document.createElement('div');
-        const hr = document.createElement('div');
-        const dias = document.createElement('div');
-        const per = document.createElement('div');
-        const obs = document.createElement('div');
-
-        const arrow = document.createElement('div');
-
-        // Set id
-        id++
-        el.id = id;
-        el.style.height = "60px"
-        el.state = false
-        el.onclick = () => {
-            if (el.state) {
-                console.log("closed");
-                el.style.height = "60px"
-                el.state = false;
-            } else {
-                console.log("open");
-                el.style.height = "250px"
-                el.state = true;
+    if (window.innerWidth / window.innerHeight > 1) {
+        cycle1.map(d => {
+            // Append to table
+            for (let i = 0; i < d.dias.length; i++) {
+                const block = buildBlock(d);
+                document.getElementById('td'+d.dias[i]).appendChild(block);
             }
-        }
-
-        // Set classes
-        el.className = "box"
-        title.className = "boxTitle"
-        prof.className = "boxInfos"
-        dep.className = "boxInfos"
-        hr.className = "boxInfos"
-        dias.className = "boxInfos"
-        per.className = "boxInfos"
-        obs.className = "boxInfos"
-
-        // Prep var
-        const horarios = d.horario.split(' ');
-        let diasH = "";
-        d.dias.map(dia => {diasH += diasDaSemana[dia] + "s "})
-        let observa = "";
-        if (d.obs != "") {
-            observa = "Observação: " + d.obs;
-        }
-
-        // Inflate with information
-        title.innerHTML = d.nome + " (" + d.codigo + ")";
-        prof.innerHTML = "Professor(a): " + d.prof;
-        dep.innerHTML = "Departamento: " + d.dep;
-        hr.innerHTML = "Horário: " + horarios[0] + " às " + horarios[1];
-        dias.innerHTML = "Dias: " + diasH;
-        per.innerHTML = "Período: De " + d.inicio + " a " + d.fim;
-        obs.innerHTML = observa;
-
-        // Change color
-        if (!d.color) {
-            d.color = getColor()
-        }
-
-        el.style.backgroundColor = d.color
-
-        // Append to div
-
-        el.appendChild(title);
-        el.appendChild(prof);
-        el.appendChild(dep);
-        el.appendChild(hr);
-        el.appendChild(dias);
-        el.appendChild(per);
-        el.appendChild(obs);
-
-        document.getElementById('td'+d.dias[i]).appendChild(el);
+        })
+    } else {
+        document.getElementById('calendar').style.display = "none";
+        document.getElementById('hv').style.display = "none";
+        cycle1.map(d => {
+            // Append to window
+            for (let i = 0; i < d.dias.length; i++) {
+                const block = buildBlock(d);
+                document.getElementById('mc'+d.dias[i]).appendChild(block);
+            }
+        })
     }
-})
+}
+
+inflateScreen();
+
+function buildBlock(d) {
+    // Create elements
+    const el = document.createElement('div');
+    const title = document.createElement('div');
+    const prof = document.createElement('div');
+    const dep = document.createElement('div');
+    const hr = document.createElement('div');
+    const dias = document.createElement('div');
+    const per = document.createElement('div');
+    const obs = document.createElement('div');
+
+    // Set toggle
+    el.style.height = "60px"
+    el.state = false
+    el.onclick = () => {
+        if (el.state) {
+            console.log("closed");
+            el.style.height = "60px"
+            el.state = false;
+        } else {
+            console.log("open");
+            el.style.height = "250px"
+            el.state = true;
+        }
+    }
+
+    // Set classes
+    el.className = "box"
+    title.className = "boxTitle"
+    prof.className = "boxInfos"
+    dep.className = "boxInfos"
+    hr.className = "boxInfos"
+    dias.className = "boxInfos"
+    per.className = "boxInfos"
+    obs.className = "boxInfos"
+
+    // Prep var
+    const horarios = d.horario.split(' ');
+    let diasH = "";
+    d.dias.map(dia => {diasH += diasDaSemana[dia]})
+    let observa = "";
+    if (d.obs != "") {
+        observa = "Observação: " + d.obs;
+    }
+
+    // Inflate with information
+    title.innerHTML = d.nome + " (" + d.codigo + ")";
+    prof.innerHTML = "Professor(a): " + d.prof;
+    dep.innerHTML = "Departamento: " + d.dep;
+    hr.innerHTML = "Horário: " + horarios[0] + " às " + horarios[1];
+    dias.innerHTML = "Dias: " + diasH;
+    per.innerHTML = "Período: De " + d.inicio + " a " + d.fim;
+    obs.innerHTML = observa;
+
+    // Change color
+    if (!d.color) {
+        d.color = getColor()
+    }
+
+    el.style.backgroundColor = d.color
+
+    // Append to div
+
+    el.appendChild(title);
+    el.appendChild(prof);
+    el.appendChild(dep);
+    el.appendChild(hr);
+    el.appendChild(dias);
+    el.appendChild(per);
+    el.appendChild(obs);
+
+    return el;
+}
+
+function cycle(c) {
+    switch (c) {
+        case 1:
+            if (selectedCycle != 1) {
+
+            } else {
+                popup("Esse ciclo já está selecionado.");
+            }
+            break;
+        default:
+            popup("A relação das matérias disponibilizadas nesse ciclo ainda não foi divulgada pela coordenação.");
+            break;
+    }
+}
 
 function getColor() {
     if (hue > 360) {
@@ -293,3 +341,40 @@ function getColor() {
 
     return "hsl(" + v1 + ", " + v2 + ", " + v3 + ")";
 }
+
+function popup(text) {
+    const popup = document.createElement('div');
+    popup.innerHTML = text;
+    popup.className = "box";
+    popup.style.maxWidth = "300px";
+    popup.style.fontWeight = "normal"
+    popup.style.backgroundColor = "#303030";
+    popup.style.color = "white"
+    popup.style.cursor = "default"
+
+    setTimeout(() => {
+        popup.style.opacity = "0"
+    }, 3000)
+
+    setTimeout(() => {
+        popup.style.display = "none"
+    }, 3500)
+
+    popup.onclick = () => {popup.style.display = "none"}
+
+    document.querySelector("#popup").append(popup);
+}
+
+let click = 0;
+document.getElementById("logo").addEventListener("click", () => {
+    click++;
+    if (click == 40) {
+        popup("Ei, para de clicar aí");
+    }
+    if (click == 60) {
+        popup("É sério");
+    }
+    if (click == 80) {
+        document.getElementById("logo").style.display = "none";
+    }
+})
