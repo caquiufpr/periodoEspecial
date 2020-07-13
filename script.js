@@ -1,190 +1,3 @@
-const cycle1 = [
-    {
-        "codigo": "EM326",
-        "nome": "Prática de Ensino e Estágio Supervisionado I",
-        "prof": "Liane Maria Vargas Barbosa",
-        "dep": "DTPEN",
-        "horario": "08h00 09h30",
-        "dias": [0],
-        "inicio": "13 de Julho",
-        "fim": "21 de Setembro",
-        "obs": "A aula do dia 14 de Setembro será realizada no dia 15."
-    },{
-        "codigo": "EM389",
-        "nome": "Prática de Docência em Química II",
-        "prof": "Sonia Maria Chaves Haracemiv",
-        "dep": "DTPEN",
-        "horario": "08h00 9h30",
-        "dias": [0],
-        "inicio": "13 de Julho",
-        "fim": "21 de Julho",
-        "obs": "A aula do dia 14 de Setembro será realizada dia 15." 
-    },
-    {
-        "codigo": "CQ076",
-        "nome": "Química de Polímeros",
-        "prof": "Sônia Faria Zawadzki",
-        "dep": "DQUI",
-        "horario": "13h30 15h30",
-        "dias": [0, 1, 2, 3, 4],
-        "inicio": "13 de Julho",
-        "fim": "7 de Agosto",
-        "obs": "" 
-    },
-    {
-        "codigo": "CQ238",
-        "nome": "Físico-Química I",
-        "prof": "Marcio Vidotti",
-        "dep": "DQUI",
-        "horario": "15h30 17h30",
-        "dias": [5],
-        "inicio": "13 de Julho",
-        "fim": "3 de Agosto",
-        "obs": "" 
-    },{
-        "codigo": "CQ048/CQ243",
-        "nome": "Físico-Química III/Cinética",
-        "prof": "Diego Guedes-Sobrinho",
-        "dep": "DQUI",
-        "horario": "16h00 19h00",
-        "dias": [0, 1, 2, 3, 4],
-        "inicio": "13 de Julho",
-        "fim": "24 de Julho",
-        "obs": "" 
-    },{
-        "codigo": "EM160",
-        "nome": "Prática de Docência em Química I",
-        "prof": "Liane Maria Vargas Barboza",
-        "dep": "DTPEN",
-        "horario": "18h30 20h00",
-        "dias": [5],
-        "inicio": "13 de Julho",
-        "fim": "22 de Setembro",
-        "obs": "" 
-    },
-    {
-        "codigo": "CQ138/CQ221",
-        "nome": "Química Geral",
-        "prof": "Ronny Rocha Ribeiro",
-        "dep": "DQUI",
-        "horario": "19h00 21h00",
-        "dias": [0, 2, 4],
-        "inicio": "13 de Julho",
-        "fim": "21 de Agosto",
-        "obs": "" 
-    },{
-        "codigo": "EM161",
-        "nome": "Prática de Docência em Química II",
-        "prof": "Neusa Nogueira Fialho",
-        "dep": "DTPEN",
-        "horario": "19h00 20h30",
-        "dias": [0],
-        "inicio": "13 de Julho",
-        "fim": "22 de Setembro",
-        "obs": "Horários variados no mês de setembro, veja o caledário para mais informações." 
-    },{
-        "codigo": "CQ059/CQ275",
-        "nome": "Tópicos Especiais em Química III - Catálise",
-        "prof": "Shirley Nakagami, Marcio Peres de Araujo",
-        "dep": "DQUI",
-        "horario": "10h00 12h00",
-        "dias": [1, 2, 3],
-        "inicio": "14 de Julho",
-        "fim": "13 de Agosto",
-        "obs": "" 
-    },{
-        "codigo": "EM159",
-        "nome": "Metodologia do Ensino de Química",
-        "prof": "Neusa Nogueira Fialho",
-        "dep": "DTPEN",
-        "horario": "19h00 20h30",
-        "dias": [2],
-        "inicio": "15 de Julho",
-        "fim": "23 de Setembro",
-        "obs": "" 
-    },{
-        "codigo": "ET053/ET084",
-        "nome": "Psicologia da Educação",
-        "prof": "Tânia Stoltz",
-        "dep": "DTFE",
-        "horario": "18h30 20h30",
-        "dias": [2],
-        "inicio": "15 de Julho",
-        "fim": "23 de Setembro",
-        "obs": "" 
-    },{
-        "codigo": "CQ097",
-        "nome": "Prática Pedagógica: Projetos Integrados I",
-        "prof": "Joanez Aparecida Aires",
-        "dep": "DQUI",
-        "horario": "13h00 17h30",
-        "dias": [3],
-        "inicio": "16 de Julho",
-        "fim": "17 de Setembro",
-        "obs": "" 
-    },{
-        "codigo": "CQ161/CQ255",
-        "nome": "Química Integrada I",
-        "prof": "Everton Bedin",
-        "dep": "DQUI",
-        "horario": "19h00 21h00",
-        "dias": [3],
-        "inicio": "16 de Julho",
-        "fim": "17 de Setembro",
-        "obs": "" 
-    },{
-        "codigo": "CM301",
-        "nome": "Cálculo em uma Variável Real",
-        "prof": "Carlos Roberto Vianna",
-        "dep": "DMAT",
-        "horario": "19h00 21h00",
-        "dias": [3],
-        "inicio": "16 de Julho",
-        "fim": "24 de Setembro",
-        "obs": "" 
-    },{
-        "codigo": "CQ099",
-        "nome": "Atividades Complementares",
-        "prof": "Joanez Aparecida Aires",
-        "dep": "DQUI",
-        "horario": "15h00 19h00",
-        "dias": [4],
-        "inicio": "15h00",
-        "fim": "",
-        "obs": "" 
-    },{
-        "codigo": "CM041",
-        "nome": "Cálculo I",
-        "prof": "Alexandre Kirilov",
-        "dep": "DMAT",
-        "horario": "16h00 17h40",
-        "dias": [0, 4],
-        "inicio": "17 de Julho",
-        "fim": "18 de Setembro",
-        "obs": "" 
-    },{
-        "codigo": "CM041",
-        "nome": "Cálculo I",
-        "prof": "Raul Prado Raia",
-        "dep": "DMAT",
-        "horario": "19h00 20h40",
-        "dias": [0, 4],
-        "inicio": "17 de Julho",
-        "fim": "18 de Setembro",
-        "obs": "" 
-    },{
-        "codigo": "",
-        "nome": "",
-        "prof": "",
-        "dep": "",
-        "horario": "",
-        "dias": [],
-        "inicio": "",
-        "fim": "",
-        "obs": "" 
-    }
-];
-
 const diasDaSemana = ["Segundas", "Terças", "Quartas", "Quintas", "Sextas", "Horário Variado"]
 let hue = -20;
 let selectedCycle = 1;
@@ -198,7 +11,10 @@ for (let i = 0; i <= 4; i++) {
     spaceToFill.appendChild(cell);
 }
 
+function inflateMobile() {
 if (window.innerWidth / window.innerHeight < 1) {
+    spaceToFillM.innerHTML = "";
+
     for (let i = 0; i <= 4; i++) {
         const mcell = document.createElement('div');
         mcell.id = "mc" + i;
@@ -211,33 +27,93 @@ if (window.innerWidth / window.innerHeight < 1) {
     mcell.innerHTML += "<h4>" + document.getElementById('hv').innerHTML + "</h4>"
     spaceToFillM.appendChild(mcell);
 }
+}
+
+inflateMobile();
 
 let id = 0;
 
-function inflateScreen() {
+function inflateScreen(c) {
 
     if (window.innerWidth / window.innerHeight > 1) {
-        cycle1.map(d => {
-            // Append to table
-            for (let i = 0; i < d.dias.length; i++) {
-                const block = buildBlock(d);
-                document.getElementById('td'+d.dias[i]).appendChild(block);
-            }
-        })
+        // Clear
+        for (let i = 0; i <= 5; i++) {
+            document.getElementById("td"+i).innerHTML = "";
+        }
+
+        switch (c) {
+            case 1:
+                cycle1.map(d => {
+                    // Append to table
+                    for (let i = 0; i < d.dias.length; i++) {
+                        const block = buildBlock(d);
+                        document.getElementById('td'+d.dias[i]).appendChild(block);
+                    }
+                })
+                break;
+            case 2:
+                cycle2.map(d => {
+                    // Append to table
+                    for (let i = 0; i < d.dias.length; i++) {
+                        const block = buildBlock(d);
+                        document.getElementById('td'+d.dias[i]).appendChild(block);
+                    }
+                })
+                break;
+            case 3:
+                cycle3.map(d => {
+                    // Append to table
+                    for (let i = 0; i < d.dias.length; i++) {
+                        const block = buildBlock(d);
+                        document.getElementById('td'+d.dias[i]).appendChild(block);
+                    }
+                })
+                break;
+            default:
+                break;
+        }
     } else {
         document.getElementById('calendar').style.display = "none";
         document.getElementById('hv').style.display = "none";
-        cycle1.map(d => {
-            // Append to window
-            for (let i = 0; i < d.dias.length; i++) {
-                const block = buildBlock(d);
-                document.getElementById('mc'+d.dias[i]).appendChild(block);
-            }
-        })
+
+        inflateMobile();
+
+        switch (c) {
+            case 1:
+                cycle1.map(d => {
+                    // Append to window
+                    for (let i = 0; i < d.dias.length; i++) {
+                        const block = buildBlock(d);
+                        document.getElementById('mc'+d.dias[i]).appendChild(block);
+                    }
+                })
+                break;
+            case 2:
+                cycle2.map(d => {
+                    // Append to window
+                    for (let i = 0; i < d.dias.length; i++) {
+                        const block = buildBlock(d);
+                        document.getElementById('mc'+d.dias[i]).appendChild(block);
+                    }
+                })
+                break;
+            case 3:
+                cycle3.map(d => {
+                    // Append to window
+                    for (let i = 0; i < d.dias.length; i++) {
+                        const block = buildBlock(d);
+                        document.getElementById('mc'+d.dias[i]).appendChild(block);
+                    }
+                })
+                break;
+            default:
+                break;
+        }
+        
     }
 }
 
-inflateScreen();
+inflateScreen(1);
 
 function buildBlock(d) {
     // Create elements
@@ -314,16 +190,40 @@ function buildBlock(d) {
 }
 
 function cycle(c) {
+    for (let i = 1; i <= 2; i++) {
+        if (c < 3) {
+        document.getElementById("s"+i).className = "cycle";
+        }
+    }
+
     switch (c) {
         case 1:
             if (selectedCycle != 1) {
-
+                inflateScreen(1);
+                document.getElementById("s"+c).className = "cycle selected";
+                selectedCycle = c
+            } else {
+                popup("Esse ciclo já está selecionado.");
+            }
+            break;
+        case 2:
+            if (selectedCycle != 2) {
+                inflateScreen(2);
+                document.getElementById("s"+c).className = "cycle selected";
+                selectedCycle = c
+            } else {
+                popup("Esse ciclo já está selecionado.");
+            }
+            break;
+        case 3:
+            if (selectedCycle != 3) {
+                //inflateScreen(3)
+                popup("As disciplinas desse ciclo ainda não foram disponibilizadas.");
             } else {
                 popup("Esse ciclo já está selecionado.");
             }
             break;
         default:
-            popup("A relação das matérias disponibilizadas nesse ciclo ainda não foi divulgada pela coordenação.");
             break;
     }
 }
