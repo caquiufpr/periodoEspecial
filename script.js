@@ -154,7 +154,7 @@ function buildBlock(d) {
     // Prep var
     const horarios = d.horario.split(' ');
     let diasH = "";
-    d.dias.map(dia => {diasH += diasDaSemana[dia]})
+    d.dias.map(dia => {diasH += (diasDaSemana[dia] + " ")})
     let observa = "";
     if (d.obs != "") {
         observa = "Observação: " + d.obs;
@@ -174,7 +174,7 @@ function buildBlock(d) {
         d.color = getColor()
     }
 
-    el.style.backgroundColor = d.color
+    el.style.background = d.color
 
     // Append to div
 
@@ -236,10 +236,13 @@ function getColor() {
     }
 
     let v1 = hue;
-    let v2 = "70%";
+    let v2 = "80%";
     let v3 = "50%";
+    let v4 = "60%";
 
-    return "hsl(" + v1 + ", " + v2 + ", " + v3 + ")";
+
+    return "linear-gradient(45deg, hsl(" + v1 + ", " + v2 + ", " + v3 + ") 0%, hsl(" + v1 + ", " + v2 + ", " + v4 + ") 100%)"
+    //return "hsl(" + v1 + ", " + v2 + ", " + v3 + ")";
 }
 
 function popup(text) {
