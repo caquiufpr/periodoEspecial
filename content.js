@@ -411,3 +411,87 @@ const cycle2 = [
         "obs": "" 
     }
 ]
+
+const cycle3 = [
+    {
+        "codigo": "CQ019",
+        "nome": "Cromatografia",
+        "prof": "Bruno José Gonçalves da Silva",
+        "dep": "DQUI",
+        "horario": "9h30 11h30",
+        "dias": [4],
+        "inicio": "10 de Agosto",
+        "fim": "18 de Setembro",
+        "obs": "Parcialmente assíncrona."
+    },{
+        "codigo": "CQ047",
+        "nome": "Físico-Química II",
+        "prof": "Harley Paiva Martins Filho",
+        "dep": "DQUI",
+        "horario": "",
+        "dias": [5],
+        "inicio": "14 de Agosto",
+        "fim": "25 de Setembro",
+        "obs": "Disciplina assíncrona com horários para tirar dúvidas pelo Teams." 
+    },{
+        "codigo": "CQ048/CQ243",
+        "nome": "Físico-Química III – Cinética Química ",
+        "prof": "Diego Guedes-Sobrinho",
+        "dep": "DQUI",
+        "horario": "15hh00 18h00",
+        "dias": [5],
+        "inicio": "10 de Agosto",
+        "fim": "28 de Agosto",
+        "obs": "Aulas assíncronas com horário para tirar dúvidas pelo Teams."
+    },{
+        "codigo": "CQ049/CQ245",
+        "nome": "Físico-Química IV/V",
+        "prof": "Marcio Vidotti",
+        "dep": "DQUI",
+        "horario": "15h30 17h30",
+        "dias": [5],
+        "inicio": "10 de Agosto",
+        "fim": "11 de Setembro",
+        "obs": "A disciplina será ofertada a partir de vídeos gravados e encontros para discussão de listas de exercícios em datas variadas." 
+    },{
+        "codigo": "CQ058a / CQ274a",
+        "nome": "Tópicos Especiais em Química II – Introdução à Química Forense",
+        "prof": "Dênio E. P. Souto, Clarice D. B. do Amaral, Bruno J. G. da Silva, Frederico L. F. Soares",
+        "dep": "DQUI",
+        "horario": "15h30 17h30",
+        "dias": [0, 3, 4],
+        "inicio": "10 de Agosto",
+        "fim": "25 de Setembro",
+        "obs": "A disciplina será majoritariamente por palestras de diversos peritos criminais." 
+    },{
+        "codigo": "CQ124/CQ231",
+        "nome": "Fundamentos da Química Orgânica I / Química Orgânica I",
+        "prof": "Daniel da Silveira Rampon e Marcelo Gonçalves Montes D’Oca",
+        "dep": "DQUI",
+        "horario": "9h30 11h30",
+        "dias": [1, 3],
+        "inicio": "11 de Agosto",
+        "fim": "26 de Setembro",
+        "obs": "" 
+    },{
+        "codigo": "CQ213",
+        "nome": "História da Química (Noturno)",
+        "prof": "Patricio Peralta Zamora",
+        "dep": "DQUI",
+        "horario": "18h30 19h30",
+        "dias": [0],
+        "inicio": "10 de Agosto",
+        "fim": "28 de Agosto",
+        "obs": "Uma boa parte será assíncrona." 
+    },{
+        "codigo": "LIB038",
+        "nome": "Comunicação em Língua Brasileira de Sinais. LIBRAS: Fundamentos da Educação Bilíngue para Surdos",
+        "prof": "Marcelo Porto",
+        "dep": "Coordenação do Curso de Letras Libras",
+        "horario": "18h00 20h00",
+        "dias": [5],
+        "inicio": "10 de Agosto",
+        "fim": "26 de Setembro",
+        "obs": "Totalmente assíncrona." 
+    }
+]

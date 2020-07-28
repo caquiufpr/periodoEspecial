@@ -169,6 +169,13 @@ function buildBlock(d) {
     per.innerHTML = "Período: De " + d.inicio + " a " + d.fim;
     obs.innerHTML = observa;
 
+    // Resize title
+    if (title.innerHTML.length > 80) {
+        title.style.fontSize = "9pt";
+    } else if (title.innerHTML.length > 50) {
+        title.style.fontSize = "10pt"
+    }
+
     // Change color
     if (!d.color) {
         d.color = getColor()
@@ -190,8 +197,8 @@ function buildBlock(d) {
 }
 
 function cycle(c) {
-    for (let i = 1; i <= 2; i++) {
-        if (c < 3) {
+    for (let i = 1; i <= 3; i++) {
+        if (c <= 3) {
         document.getElementById("s"+i).className = "cycle";
         }
     }
@@ -201,7 +208,6 @@ function cycle(c) {
             if (selectedCycle != 1) {
                 inflateScreen(1);
                 document.getElementById("s"+c).className = "cycle selected";
-                selectedCycle = c
             } else {
                 popup("Esse ciclo já está selecionado.");
             }
@@ -210,15 +216,15 @@ function cycle(c) {
             if (selectedCycle != 2) {
                 inflateScreen(2);
                 document.getElementById("s"+c).className = "cycle selected";
-                selectedCycle = c
             } else {
                 popup("Esse ciclo já está selecionado.");
             }
             break;
         case 3:
             if (selectedCycle != 3) {
-                //inflateScreen(3)
-                popup("As disciplinas desse ciclo ainda não foram disponibilizadas.");
+                inflateScreen(3);
+                document.getElementById("s"+c).className = "cycle selected";
+                popup("As disciplinas desse ciclo ainda estão sendo atualizadas.");
             } else {
                 popup("Esse ciclo já está selecionado.");
             }
@@ -226,6 +232,8 @@ function cycle(c) {
         default:
             break;
     }
+
+    selectedCycle = c;
 }
 
 function getColor() {
@@ -237,8 +245,8 @@ function getColor() {
 
     let v1 = hue;
     let v2 = "80%";
-    let v3 = "50%";
-    let v4 = "60%";
+    let v3 = "40%";
+    let v4 = "50%";
 
 
     return "linear-gradient(45deg, hsl(" + v1 + ", " + v2 + ", " + v3 + ") 0%, hsl(" + v1 + ", " + v2 + ", " + v4 + ") 100%)"
