@@ -523,5 +523,15 @@ const cycle3 = [
         "inicio": "12 de Agosto",
         "fim": "16 de Setembro",
         "obs": "No dia 19/08 não terão astividades sícronas. Veja o cronograma para mais detalhes." 
+    },{
+        "codigo": "CQ255",
+        "nome": "Química Integrada",
+        "prof": "Everton Bedin",
+        "dep": "DQUI",
+        "horario": "19h00 20h00",
+        "dias": [4],
+        "inicio": "?",
+        "fim": "?",
+        "obs": "Não foram encontradas datas na ficha da disciplina, porém a Carga Horária é de 90h, sendo 10h semanais." 
     }
 ]
