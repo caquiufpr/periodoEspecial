@@ -493,5 +493,35 @@ const cycle3 = [
         "inicio": "10 de Agosto",
         "fim": "26 de Setembro",
         "obs": "Totalmente assíncrona." 
+    },{
+        "codigo": "ET170",
+        "nome": "Diversidade Étcnico-Racial, Gênero e Sexualidade",
+        "prof": "Valeria Floriano Machado",
+        "dep": "Departamento de Teoria e Fundamentos da Educação",
+        "horario": "15h00 17h00",
+        "dias": [2],
+        "inicio": "12 de Agosto",
+        "fim": "16 de Setembro",
+        "obs": "No dia 19/08 não terão astividades sícronas. Veja o cronograma para mais detalhes." 
+    },{
+        "codigo": "ET170",
+        "nome": "Diversidade Étcnico-Racial, Gênero e Sexualidade",
+        "prof": "Carolina dos Anjos de Borba",
+        "dep": "Departamento de Teoria e Fundamentos da Educação",
+        "horario": "15h00 17h00",
+        "dias": [2],
+        "inicio": "12 de Agosto",
+        "fim": "16 de Setembro",
+        "obs": "No dia 19/08 não terão astividades sícronas. Veja o cronograma para mais detalhes." 
+    },{
+        "codigo": "ET170",
+        "nome": "Diversidade Étcnico-Racial, Gênero e Sexualidade",
+        "prof": "Paulo Vinicius Silva",
+        "dep": "Departamento de Teoria e Fundamentos da Educação",
+        "horario": "20h30 22h30",
+        "dias": [2],
+        "inicio": "12 de Agosto",
+        "fim": "16 de Setembro",
+        "obs": "No dia 19/08 não terão astividades sícronas. Veja o cronograma para mais detalhes." 
     }
 ]

@@ -224,7 +224,7 @@ function cycle(c) {
             if (selectedCycle != 3) {
                 inflateScreen(3);
                 document.getElementById("s"+c).className = "cycle selected";
-                popup("As disciplinas desse ciclo ainda estão sendo atualizadas.");
+                popup("Grade atualizada às 14h45 do dia 31/07, a partir das informações no site da coordenação.");
             } else {
                 popup("Esse ciclo já está selecionado.");
             }
