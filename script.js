@@ -343,12 +343,7 @@ let click = 0;
 document.getElementById("logo").addEventListener("click", () => {
     click++;
     if (click == 40) {
-        popup("Ei, para de clicar aí");
-    }
-    if (click == 60) {
-        popup("É sério");
-    }
-    if (click == 80) {
-        document.getElementById("logo").style.display = "none";
+        popup("<a style=\"color:white\" href=\"https://drive.google.com/file/d/1BP0GXBqwXY0zBknl9FcXFWPmmUklWjEI/view?usp=sharing\">condução.gif</a>");
+        click = 0;
     }
 })
