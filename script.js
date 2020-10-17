@@ -1,6 +1,9 @@
-const diasDaSemana = ["Segundas", "Terças", "Quartas", "Quintas", "Sextas", "Horário Variado"]
+const diasDaSemana = ["Segundas", "Terças", "Quartas", "Quintas", "Sextas", "Dias Variados"];
+const diasDaSemanaA = ["S","T","Q","Q","S"];
 let hue = -20;
-let selectedCycle = 1;
+let selectedCycle = 4;
+let mis = "<i class=\"menuIcons material-icons\" md-24 md-light style=\"vertical-align: middle;padding: 5px;\">";
+let mif = "</i> ";
 
 let spaceToFill = document.getElementById("tableItem");
 let spaceToFillM = document.getElementById("mobile");
@@ -69,6 +72,15 @@ function inflateScreen(c) {
                     }
                 })
                 break;
+            case 4:
+                cycle4.map(d => {
+                    // Append to table
+                    for (let i = 0; i < d.dias.length; i++) {
+                        const block = buildBlock(d);
+                        document.getElementById('td'+d.dias[i]).appendChild(block);
+                    }
+                })
+                break;
             default:
                 break;
         }
@@ -106,6 +118,15 @@ function inflateScreen(c) {
                     }
                 })
                 break;
+            case 4:
+                cycle4.map(d => {
+                    // Append to window
+                    for (let i = 0; i < d.dias.length; i++) {
+                        const block = buildBlock(d);
+                        document.getElementById('mc'+d.dias[i]).appendChild(block);
+                    }
+                })
+                break;
             default:
                 break;
         }
@@ -113,7 +134,9 @@ function inflateScreen(c) {
     }
 }
 
-inflateScreen(1);
+inflateScreen(selectedCycle);
+
+popup("Ainda serão adicionadas mais disciplinas.")
 
 function buildBlock(d) {
     // Create elements
@@ -125,20 +148,23 @@ function buildBlock(d) {
     const dias = document.createElement('div');
     const per = document.createElement('div');
     const obs = document.createElement('div');
+    const link = document.createElement('a');
 
-    // Set toggle
-    el.style.height = "60px"
-    el.state = false
-    el.onclick = () => {
-        if (el.state) {
-            console.log("closed");
-            el.style.height = "60px"
-            el.state = false;
-        } else {
-            console.log("open");
-            el.style.height = "250px"
-            el.state = true;
+    // Week days
+    const weekHolder = document.createElement('div');
+    for (i = 0; i < 5; i++) {
+        const dayButton = document.createElement('div');
+        dayButton.innerHTML = diasDaSemanaA[i];
+        dayButton.className = "dayButton";
+        if (d.dias.includes(i)) {
+            dayButton.className += " active";
         }
+        weekHolder.appendChild(dayButton);
+    }
+    weekHolder.className = 'weekHolder';
+
+    if (d.dias.includes(5)) {
+        weekHolder.innerHTML = diasDaSemana[5];
     }
 
     // Set classes
@@ -150,11 +176,10 @@ function buildBlock(d) {
     dias.className = "boxInfos"
     per.className = "boxInfos"
     obs.className = "boxInfos"
+    link.className = "buttonInfos"
 
     // Prep var
     const horarios = d.horario.split(' ');
-    let diasH = "";
-    d.dias.map(dia => {diasH += (diasDaSemana[dia] + " ")})
     let observa = "";
     if (d.obs != "") {
         observa = "Observação: " + d.obs;
@@ -162,12 +187,27 @@ function buildBlock(d) {
 
     // Inflate with information
     title.innerHTML = d.nome + " (" + d.codigo + ")";
-    prof.innerHTML = "Professor(a): " + d.prof;
-    dep.innerHTML = "Departamento: " + d.dep;
-    hr.innerHTML = "Horário: " + horarios[0] + " às " + horarios[1];
-    dias.innerHTML = "Dias: " + diasH;
-    per.innerHTML = "Período: De " + d.inicio + " a " + d.fim;
+    prof.innerHTML = mis + "supervisor_account" + mif + "<div style=\"display:inline\">" + d.prof + "</div>";
+    dep.innerHTML = mis + "business" + mif + d.dep;
+    hr.innerHTML = mis + "schedule" + mif + horarios[0] + " às " + horarios[1];
+    dias.innerHTML = mis + "event" + mif;
+    dias.appendChild(weekHolder);
+    per.innerHTML = "<br/>Período: De " + d.inicio + " a " + d.fim;
     obs.innerHTML = observa;
+
+    // Remove hours from type 5 date
+    if (d.dias.includes(5)) {
+        hr.style.display = "none";
+    }
+    
+    // Link to page
+    if (d.link) {
+        link.innerHTML = "Ver ementa";
+        link.href = d.link;   
+        link.target = "_blank";   
+    } else {
+        link.style.display = "none";
+    }
 
     // Resize title
     if (title.innerHTML.length > 80) {
@@ -187,18 +227,34 @@ function buildBlock(d) {
 
     el.appendChild(title);
     el.appendChild(prof);
-    el.appendChild(dep);
     el.appendChild(hr);
     el.appendChild(dias);
+    el.appendChild(dep);
     el.appendChild(per);
     el.appendChild(obs);
+    el.appendChild(link);
+
+    // Set toggle
+    el.state = false;
+    el.style.height = "60px"
+    el.onclick = () => {
+        if (el.state) {
+            console.log("closed");
+            el.style.height = "60px"
+            el.state = false;
+        } else {
+            console.log("open");
+            el.style.height = "340px";
+            el.state = true;
+        }
+    }
 
     return el;
 }
 
 function cycle(c) {
-    for (let i = 1; i <= 3; i++) {
-        if (c <= 3) {
+    for (let i = 1; i <= 4; i++) {
+        if (c <= 4) {
         document.getElementById("s"+i).className = "cycle";
         }
     }
@@ -224,7 +280,14 @@ function cycle(c) {
             if (selectedCycle != 3) {
                 inflateScreen(3);
                 document.getElementById("s"+c).className = "cycle selected";
-                popup("Grade atualizada às 22h00 do dia 31/07, a partir das informações no site da coordenação.");
+            } else {
+                popup("Esse ciclo já está selecionado.");
+            }
+            break;
+        case 4:
+            if (selectedCycle != 4) {
+                inflateScreen(4);
+                document.getElementById("s"+c).className = "cycle selected";
             } else {
                 popup("Esse ciclo já está selecionado.");
             }

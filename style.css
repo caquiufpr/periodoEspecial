@@ -49,6 +49,22 @@ body {
 
 .boxInfos {
     font-size: 10pt;
+    display: flex;
+    align-items: center;
+}
+
+.buttonInfos {
+    display: block;
+    padding: 5px;
+    border: solid;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: white;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-decoration: none;
 }
 
 tbody {
@@ -115,6 +131,29 @@ tbody {
     display: flex;
     margin-left: 5vw;
     margin-bottom: 20px;
+}
+
+.weekHolder {
+    display: inline-flex;
+}
+
+.dayButton {
+    padding: 2px;
+    margin: 2px;
+    background-color: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 50%;
+    height: 12pt;
+    width: 12pt;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.dayButton.active {
+    background-color: white;
+    color: rgba(50, 50, 50);
 }
 
 #popup {

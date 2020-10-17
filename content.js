@@ -535,3 +535,282 @@ const cycle3 = [
         "obs": "Não foram encontradas datas na ficha da disciplina, porém a Carga Horária é de 90h, sendo 10h semanais." 
     }
 ]
+
+const cycle4 = [
+    {
+        "codigo": "BQ005",
+        "nome": "Introdução à Bioquímica",
+        "prof": "Leda Satie Chubatsu",
+        "dep": "Departamento de Bioquímica e Biologia Molecular",
+        "horario": "13h30 15h30",
+        "dias": [2],
+        "inicio": "04/11",
+        "fim": "24/03",
+        "obs": "Metade assíncrona (2h)",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/bq005-bioquimica-_leda.pdf"
+    },{
+        "codigo": "CQ018",
+        "nome": "Química Toxicológica",
+        "prof": "Rilton Alves de Freitas",
+        "dep": "DQUI",
+        "horario": "17h30 21h30",
+        "dias": [1],
+        "inicio": "26/01",
+        "fim": "23/03",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq018-quimica-toxicologica_rilton.pdf"
+    },{
+        "codigo": "CQ019",
+        "nome": "Cromatografia",
+        "prof": "Btuno José Gonçalves da Silva",
+        "dep": "DQUI",
+        "horario": "9h30 11h30",
+        "dias": [4],
+        "inicio": "06/11",
+        "fim": "18/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq019-cromatografia_bruno.pdf"
+    },{
+        "codigo": "CQ043",
+        "nome": "Estágio Supervisionado",
+        "prof": "Lauro Camargo Dias Júnior, Liliana Micaroni, Regina Maria Queiroz de Mello, Maria Aparecida Ferreira César Oliveira ",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "-",
+        "fim": "-",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq043_estagio_lauro_liliana_regina_cida.pdf"
+    },{
+        "codigo": "CQ042",
+        "nome": "Química Ambiental",
+        "prof": "Marco Tadeu Grassi",
+        "dep": "DQUI",
+        "horario": "19h 21h",
+        "dias": [2],
+        "inicio": "18/01",
+        "fim": "05/03",
+        "obs": "8h de atividades assíncronas semanais.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq042_cq218-quimica-ambiental_marco_grassi.pdf"
+    },{
+        "codigo": "CQ049",
+        "nome": "Físico-Química IV",
+        "prof": "Harley Paiva Martins Filho",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "03/11",
+        "fim": "22/01",
+        "obs": "Aulas gravadas postadas no YouTube.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq049-fisico-quimica-iv_harley.pdf"
+    },{
+        "codigo": "CQ052/CQ224",
+        "nome": "Físico-Química Experimental III / IV",
+        "prof": "Regina Maria Queiroz de Mello",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "01/02",
+        "fim": "26/03",
+        "obs": "Aulas gravadas postadas no YouTube.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq052_cq244_fisico-quimica-experimental-iii-_-iv-regina.pdf"
+    },{
+        "codigo": "CQ058/CQ274",
+        "nome": "Tópicos Especiais em Química II – Introdução à Química Forense",
+        "prof": " Bruno J. G. da Silva, Clarice D. B. do Amaral, Frederico L. F. Soares",
+        "dep": "DQUI",
+        "horario": "15h30 17h30",
+        "dias": [0, 2],
+        "inicio": "05/11",
+        "fim": "17/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq058_cq274_topicos-especiais-em-quimica-ii-introducao-a-quimica-forense-bruno_clarice_frederico.pdf"
+    },{
+        "codigo": "CQ051",
+        "nome": "Físico-Química Experimental II",
+        "prof": "Rilton Alves de Freitas",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "?",
+        "fim": "?",
+        "obs": "Datas não informadas na ementa.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq051-fisico-quimica-experimental-ii-_rilton.pdf"
+    },{
+        "codigo": "CQ132/CQ221",
+        "nome": "Fundamentos de Química Inorgânica I",
+        "prof": " Herbert Winnischofer, Márcio Peres de Araujo, Shirley Nakagaki",
+        "dep": "DQUI",
+        "horario": "20h 22h",
+        "dias": [0],
+        "inicio": "90/11",
+        "fim": "08/03",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq132-e-221-fundamentos-de-quimica-inorganica_herbert_marcio-peres_shirley.pdf"
+    },{
+        "codigo": "CQ133",
+        "nome": "Fundamentos de Química Inorgânica II (Grade Antiga)",
+        "prof": "Fábio Souza Nunes, Giovana Gioppo Nunes",
+        "dep": "DQUI",
+        "horario": "19h 21h",
+        "dias": [4],
+        "inicio": "06/11",
+        "fim": "26/03",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq133-fundamentos-de-quimica-inorganica-ii_fabio_giovana.pdf"
+    },{
+        "codigo": "CQ135/CQ224",
+        "nome": "Fundamentos de Química Inorgânica IV",
+        "prof": "Aldo Zarbin, Herbert Winnischofer",
+        "dep": "DQUI",
+        "horario": "14h 16h",
+        "dias": [2],
+        "inicio": "18/11",
+        "fim": "03/02",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq135-e-224-fundamentos-de-quimica-inorganica_herbert_aldo.pdf"
+    },{
+        "codigo": "CQ155",
+        "nome": "Introdução à Filosofia das Ciências para Química",
+        "prof": "Roberto Dalmo Varallo Lima de Oliveira",
+        "dep": "DQUI",
+        "horario": "14h 18h",
+        "dias": [2],
+        "inicio": "04/11",
+        "fim": "16/12",
+        "obs": "Possui atividades síncronas mas com horários variados.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq155-introd-filosofia-ciencias-para-quim_dalmo.pdf"
+    },{
+        "codigo": "CQ156",
+        "nome": "Pesquisa em Ensino de Química",
+        "prof": "Roberto Dalmo Varallo Lima de Oliveira",
+        "dep": "DQUI",
+        "horario": "18h 22h",
+        "dias": [4],
+        "inicio": "04/11",
+        "fim": "18/12",
+        "obs": "Possui atividades síncronas mas com horários variados.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq156-pesquisa-em-ensino-de-quimica_dalmo.pdf"
+    },{
+        "codigo": "CQ158",
+        "nome": "Projetos de Pesquisa em Ensino de Química II ",
+        "prof": "Camila Silveira da Silva",
+        "dep": "DQUI",
+        "horario": "19h 23h",
+        "dias": [1],
+        "inicio": "03/11",
+        "fim": "16/03",
+        "obs": "O horário conta atividades assíncronas.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq158-proj-pesquisa-ens-quimica-ii_camila.pdf"
+    },{
+        "codigo": "CQ222",
+        "nome": "Química Inorgânica II",
+        "prof": "Fábio Souza Nunes",
+        "dep": "DQUI",
+        "horario": "19h 20h",
+        "dias": [3],
+        "inicio": "21/01",
+        "fim": "25/03",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq222-quimica-inorganica-ii_fabio.pdf"
+    },{
+        "codigo": "CQ223",
+        "nome": "Química Inorgânica III",
+        "prof": "Giovana Gioppo Nunes",
+        "dep": "DQUI",
+        "horario": "13h30 15h30",
+        "dias": [1],
+        "inicio": "03/11",
+        "fim": "15/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq223-quimica-inorganica-iii_giovana.pdf"
+    },{
+        "codigo": "CQ256",
+        "nome": "Seminários de Educação em Química (Diurno)",
+        "prof": "Roberto Dalmo Varallo Lima de Oliveira",
+        "dep": "DQUI",
+        "horario": "8h 12h",
+        "dias": [0],
+        "inicio": "03/11",
+        "fim": "18/12",
+        "obs": "Atividades síncronas com datas variadas.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq256-semin-educ-quimica_dalmo.pdf"
+    },{
+        "codigo": "CQ256N",
+        "nome": "Seminários de Educação em Química (Noturno)",
+        "prof": "Roberto Dalmo Varallo Lima de Oliveira",
+        "dep": "DQUI",
+        "horario": "18h 22h",
+        "dias": [0],
+        "inicio": "03/11",
+        "fim": "18/12",
+        "obs": "Atividades síncronas com datas variadas.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq256-semin-educ-quim-noturno_dalmo.pdf"
+    },{
+        "codigo": "EP073",
+        "nome": "Política e Planejamento da Educação Básica Brasileira",
+        "prof": "Claudia Regina Baukat Silveira Moreira",
+        "dep": "Deplae",
+        "horario": "9h 10h30",
+        "dias": [4],
+        "inicio": "06/11",
+        "fim": "26/02",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/ep073-politica-plan-da-ed-bras_claudia_moreira.pdf"
+    },{
+        "codigo": "EP073/EP124",
+        "nome": "Política e Planejamento da Educação Básica Brasileira",
+        "prof": "Ângelo Ricardo de Souza",
+        "dep": "Deplae",
+        "horario": "19h 21h",
+        "dias": [1],
+        "inicio": "03/11",
+        "fim": "09/02",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/ep073_ep124-politica-plan-educ-bras-_angelo.pdf"
+    },{
+        "codigo": "CQ114",
+        "nome": "Termodinâmica e Cinética",
+        "prof": "Harley Paiva Martins Filho",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "09/11",
+        "fim": "12/03",
+        "obs": "Aulas gravadas disponíveis no YouTube.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq114-termodinamica-e-cinetica_harley.pdf"
+    },{
+        "codigo": "CQ171",
+        "nome": "Operações Unitárias em Química Industrial II",
+        "prof": "Izabel Cristina Rigel Vidotti Miyata",
+        "dep": "DQUI",
+        "horario": "9h 11h",
+        "dias": [3],
+        "inicio": "18/02",
+        "fim": "01/04",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq171-oper-unitarias-em-quim-ind-ii_izabel.pdf"
+    },{
+        "codigo": "EM161",
+        "nome": "Prática de Docência em Química II",
+        "prof": "Neusa Nogueira Fialho",
+        "dep": "Departamento de Teoria e Prática de Ensino",
+        "horario": "19h 20h30",
+        "dias": [0],
+        "inicio": "09/12",
+        "fim": "01/02",
+        "obs": "O plano de ensino está no site da coordenação.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/em161-ficha_02_neusa_fialho.pdf"
+    },{
+        "codigo": "EM326",
+        "nome": "Prática de Ensino e Estágio Supervisionado de Química I",
+        "prof": "Neusa Nogueira Fialho",
+        "dep": "Departamento de Teoria e Prática de Ensino",
+        "horario": "8h 9h30",
+        "dias": [0],
+        "inicio": "09/11",
+        "fim": "25/01",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/em326-neusa_fialho_ficha02.pdf"
+    }
+]
