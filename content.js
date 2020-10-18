@@ -617,7 +617,7 @@ const cycle4 = [
     },{
         "codigo": "CQ058/CQ274",
         "nome": "Tópicos Especiais em Química II – Introdução à Química Forense",
-        "prof": " Bruno J. G. da Silva, Clarice D. B. do Amaral, Frederico L. F. Soares",
+        "prof": "Bruno J. G. da Silva, Clarice D. B. do Amaral, Frederico L. F. Soares",
         "dep": "DQUI",
         "horario": "15h30 17h30",
         "dias": [0, 2],
@@ -643,7 +643,7 @@ const cycle4 = [
         "dep": "DQUI",
         "horario": "20h 22h",
         "dias": [0],
-        "inicio": "90/11",
+        "inicio": "09/11",
         "fim": "08/03",
         "obs": "",
         "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq132-e-221-fundamentos-de-quimica-inorganica_herbert_marcio-peres_shirley.pdf"
