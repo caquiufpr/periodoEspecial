@@ -812,5 +812,159 @@ const cycle4 = [
         "fim": "25/01",
         "obs": "",
         "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/em326-neusa_fialho_ficha02.pdf"
+    },{
+        "codigo": "CE003",
+        "nome": "Estatística II",
+        "prof": "Fernando de Pol Mayer",
+        "dep": "Departamento de Estatística",
+        "horario": "18h30 20h30",
+        "dias": [2],
+        "inicio": "09/11",
+        "fim": "26/02",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/ce003_fernando.pdf"
+    },{
+        "codigo": "CE009",
+        "nome": "Introdução à Estatística",
+        "prof": "Fernando de Pol Mayer",
+        "dep": "Departamento de Estatística",
+        "horario": "18h30 20h30",
+        "dias": [2],
+        "inicio": "09/11",
+        "fim": "26/02",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/ce009_fernando.pdf"
+    },{
+        "codigo": "CQ047",
+        "nome": "Físico-Química II",
+        "prof": "Elisa Souza Orth",
+        "dep": "DQUI",
+        "horario": "13h30 15h30",
+        "dias": [1,3],
+        "inicio": "19/01",
+        "fim": "18/03",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq047_elisa.pdf"
+    },{
+        "codigo": "CQ048/CQ243",
+        "nome": "Físico-Química III - Cinética Química",
+        "prof": "Diego Guedes-Sobrinho",
+        "dep": "DQUI",
+        "horario": "13h30 15h30",
+        "dias": [0,2],
+        "inicio": "03/02",
+        "fim": "26/03",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq048_cq243_diego.pdf"
+    },{
+        "codigo": "CQ067",
+        "nome": "Espectrometria I",
+        "prof": "Fabio Simonelli",
+        "dep": "DQUI",
+        "horario": "15h 16h",
+        "dias": [1],
+        "inicio": "10/11",
+        "fim": "17/12",
+        "obs": "O horário varia em algumas datas. Avaliação final em Fevereiro.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq067_fabio_simonelli.pdf"
+    },{
+        "codigo": "CQ069/CQ264",
+        "nome": "Quimiometria",
+        "prof": "Frederico Luis Felipe Soares",
+        "dep": "DQUI",
+        "horario": "13h30 15h30",
+        "dias": [1,3],
+        "inicio": "03/11",
+        "fim": "15/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq069_frederico.pdf"
+    },{
+        "codigo": "CQ115/CQ246",
+        "nome": "Química Quântica",
+        "prof": "Diego Guedes Sobrinho, Thiago N M Cervantes",
+        "dep": "DQUI",
+        "horario": "15h30 17h30",
+        "dias": [0,2],
+        "inicio": "09/11",
+        "fim": "10/03",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq115_cq246_diego_thiago.pdf"
+    },{
+        "codigo": "CQ134",
+        "nome": "Fundamentos de Química Inorgânica III",
+        "prof": "Flávio Massao Matsumoto",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "?",
+        "fim": "?",
+        "obs": "Assíncrona",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq134_flavio.pdf"
+    },{
+        "codigo": "CQ138/211",
+        "nome": "Química Geral",
+        "prof": "Ronny Rocha Ribeiro",
+        "dep": "DQUI",
+        "horario": "19h 21h",
+        "dias": [0,2,4],
+        "inicio": "04/11",
+        "fim": "08/02",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq138_cq211_ronny.pdf"
+    },{
+        "codigo": "CQ211",
+        "nome": "Química Geral",
+        "prof": "Shirley Nakagaki, Aldo J. G. Zarbin",
+        "dep": "DQUI",
+        "horario": "9h30 12h",
+        "dias": [2,3],
+        "inicio": "04/11",
+        "fim": "03/03",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq211_shirley_aldo.pdf"
+    },{
+        "codigo": "CQ213",
+        "nome": "História da Química",
+        "prof": "Patricio Peralta Zamora",
+        "dep": "DQUI",
+        "horario": "10h 12h",
+        "dias": [0],
+        "inicio": "09/11",
+        "fim": "18/01",
+        "obs": "Também existirão aulas assíncronas.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq213_patricio.pdf"
+    },{
+        "codigo": "EM159",
+        "nome": "Metodologia do Ensino de Química",
+        "prof": "Neusa Nogueira Fialho",
+        "dep": "Departamento de Teoria e Prática de Ensino",
+        "horario": "19h 20h30",
+        "dias": [2],
+        "inicio": "11/12",
+        "fim": "03/02",
+        "obs": "Plano de Ensino disponível no site da coordenação.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/em_159_ficha02_neusa_fialho.pdf"
+    },{
+        "codigo": "EM389",
+        "nome": "Prática de Ensino e Estágio Supervisionado de Química II",
+        "prof": "Sonia Maria Chaves Haracemiv",
+        "dep": "Departamento de Teoria e Prática de Ensino",
+        "horario": "8h 9h30",
+        "dias": [0],
+        "inicio": "09/11",
+        "fim": "25/01",
+        "obs": "Plano de Ensino disponível no site da coordenação.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/em389_ficha_02_sonia_haracemiv.pdf"
+    },{
+        "codigo": "GC002",
+        "nome": "Mineralogia I",
+        "prof": "Anelize Manuela Bahaniuk Rumbelspeger, Leonardo Evangelista Lagoeiro",
+        "dep": "Departamento de Geologia",
+        "horario": "9h30 11h30",
+        "dias": [4],
+        "inicio": "03/11",
+        "fim": "26/02",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/gc002_anelize_leonardo.pdf"
     }
 ]
