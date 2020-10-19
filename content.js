@@ -620,7 +620,7 @@ const cycle4 = [
         "prof": "Bruno J. G. da Silva, Clarice D. B. do Amaral, Frederico L. F. Soares",
         "dep": "DQUI",
         "horario": "15h30 17h30",
-        "dias": [0, 2],
+        "dias": [0, 3],
         "inicio": "05/11",
         "fim": "17/12",
         "obs": "",
