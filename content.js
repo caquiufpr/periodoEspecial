@@ -877,7 +877,7 @@ const cycle4 = [
         "inicio": "03/11",
         "fim": "15/12",
         "obs": "",
-        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq069_frederico.pdf"
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq069_quimiometria-frederico.pdf"
     },{
         "codigo": "CQ115/CQ246",
         "nome": "Química Quântica",
@@ -966,5 +966,71 @@ const cycle4 = [
         "fim": "26/02",
         "obs": "",
         "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/gc002_anelize_leonardo.pdf"
+    },{
+        "codigo": "CQ046",
+        "nome": "Físico-Química I",
+        "prof": "Eduardo Lemos de Sá",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "04/11",
+        "fim": "12/02",
+        "obs": "A disciplina é majoritariamente assíncrona, porém possui alguns encontros conforme o cronograma.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq046_eduardo-lemos.pdf"
+    },{
+        "codigo": "CQ112",
+        "nome": "Introdução à Físico-Química",
+        "prof": "Eduardo Lemos de Sá",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "04/11",
+        "fim": "25/01",
+        "obs": "A disciplina é majoritariamente assíncrona, porém possui alguns encontros conforme o cronograma.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq112_eduardo-lemos.pdf"
+    },{
+        "codigo": "CQ113",
+        "nome": "Termodinâmica e Eletroquímica",
+        "prof": "Eduardo Lemos de Sá",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "04/11",
+        "fim": "12/02",
+        "obs": "A disciplina é majoritariamente assíncrona, porém possui alguns encontros conforme o cronograma.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq113_eduardo_lemos_noturno.pdf"
+    },{
+        "codigo": "CQ238",
+        "nome": "Físico-Química I",
+        "prof": "Marcio Vidotti",
+        "dep": "DQUI",
+        "horario": "19h 21h",
+        "dias": [1],
+        "inicio": "12/01",
+        "fim": "16/03",
+        "obs": "Aulas assíncronas com períodos síncronos para resolução de exercícios e dúvidas.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq238_fq1-vidotti.pdf"
+    },{
+        "codigo": "CQ240",
+        "nome": "Físico-Química II",
+        "prof": "Marcio Vidotti",
+        "dep": "DQUI",
+        "horario": "14h 17h",
+        "dias": [3],
+        "inicio": "14/01",
+        "fim": "18/03",
+        "obs": "Aulas assíncronas com períodos síncronos para resolução de exercícios e dúvidas.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq240_-fq2-vidotti.pdf"
+    },{
+        "codigo": "GC001",
+        "nome": "Geologia I",
+        "prof": "Germán Vinueza",
+        "dep": "DGEO",
+        "horario": "14h 16h",
+        "dias": [1],
+        "inicio": "09/11",
+        "fim": "26/03",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/gc001_geologia-1-german_vinueza.pdf"
     }
 ]
