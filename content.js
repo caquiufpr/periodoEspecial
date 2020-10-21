@@ -1032,5 +1032,181 @@ const cycle4 = [
         "fim": "26/03",
         "obs": "",
         "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/gc001_geologia-1-german_vinueza.pdf"
+    },{
+        "codigo": "CF110",
+        "nome": "Física II",
+        "prof": "Marcio Henrique Franco Bettega",
+        "dep": "DFIS",
+        "horario": "? ?",
+        "dias": [0,2],
+        "inicio": "18/01",
+        "fim": "17/03",
+        "obs": "Não foram encontrados horários das aulas na ficha.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cf110-fisica-ii.pdf"
+    },{
+        "codigo": "CF111",
+        "nome": "Física III",
+        "prof": "José Varalda",
+        "dep": "DFIS",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "09/11",
+        "fim": "27/03",
+        "obs": "Todas as atividades serão assíncronas.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cf111-fisica-iii.pdf"
+    },{
+        "codigo": "CF062",
+        "nome": "Física IV",
+        "prof": "Ismael André Heisler",
+        "dep": "DFIS",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "01/02",
+        "fim": "15/03",
+        "obs": "Apenas as provas serão realizadas de forma síncrona nas datas marcadas.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cf062-fisica-iv.pdf"
+    },{
+        "codigo": "CF110",
+        "nome": "Física II",
+        "prof": "Guinther Kellermann",
+        "dep": "DFIS",
+        "horario": "19h30 23h30",
+        "dias": [0,2],
+        "inicio": "02/11",
+        "fim": "22/02",
+        "obs": "O horário das aulas na segunda vai das 19h30 às 21h30 e na quarta das 21h30 às 23h30.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cf110-fisica-ii-1.pdf"
+    },{
+        "codigo": "CQ125/CQ232",
+        "nome": "Fundamentos de Química Orgânica II / Química Orgânica II",
+        "prof": "Claudiney Soares Cordeiro",
+        "dep": "DQUI",
+        "horario": "19h 21h",
+        "dias": [0,2,4],
+        "inicio": "04/11",
+        "fim": "02/03",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq125_cq232_claudiney.pdf"
+    },{
+        "codigo": "CQ126",
+        "nome": "Fundamentos de Química Orgânica III",
+        "prof": "Daniel da Silveira Rampon, Caroline da Ros Montes D’Oca e Sônia Faria Zawadzki",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "03/11",
+        "fim": "01/04",
+        "obs": "A disciplina ocorrerá de forma síncrona nas terças e quintas, porém nas terças será das 15h30 às 17h30 e nas quintas das 9h30 às 11h30.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq126_daniel_caroline_sonia.pdf"
+    },{
+        "codigo": "CM005",
+        "nome": "Álgebra Linear",
+        "prof": "Aldemir José da Silva Pinto, Ana Gabriela Martínez, Lucelina Batista dos Santos, Pedro Danizete Damázio",
+        "dep": "DMAT",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "18/01",
+        "fim": "13/03",
+        "obs": "Totalmente assíncrona.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cm005_aldemir_ana_lucelina_pedro.pdf"
+    },{
+        "codigo": "CM041",
+        "nome": "Cálculo I",
+        "prof": "Ver ficha da disciplina",
+        "dep": "DMAT",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "03/11",
+        "fim": "24/03",
+        "obs": "Totalmente assíncrona.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cm041_alexandre_jose_juan_lucas_olivier_raul_tanise.pdf"
+    },{
+        "codigo": "CM042, CMI031, CMA211",
+        "nome": "Cálculo II, Cálculo 2A",
+        "prof": "Ver ficha da disciplina",
+        "dep": "DMAT",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "01/12",
+        "fim": "26/03",
+        "obs": "Totalmente assíncrona.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cm042_cmi031_cma211_carlos_cleber_diego_elizabeth_jose_lucelina_paula.pdf"
+    },{
+        "codigo": "CM045",
+        "nome": "Geometria Analítica",
+        "prof": "Carlos Roberto Vianna",
+        "dep": "DMAT",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "03/11",
+        "fim": "22/01",
+        "obs": "Horário síncrono às terças para atendimento.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cm045_carlos_vianna.pdf"
+    },{
+        "codigo": "CM300",
+        "nome": "Introdução ao Cálculo (Diurno)",
+        "prof": "Ver ficha da disciplina",
+        "dep": "DMAT",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "04/11",
+        "fim": "08/02",
+        "obs": "Totalmente assíncrona. Cronograma disponível no site da coordenação.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cm300__alexandre_carlos_elias_mael_roberto_saulo_diurno.pdf"
+    },{
+        "codigo": "CM300",
+        "nome": "Introdução ao Cálculo (Noturno)",
+        "prof": "Ver ficha da disciplina",
+        "dep": "DMAT",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "04/11",
+        "fim": "08/02",
+        "obs": "Totalmente assíncrona. Cronograma disponível no site da coordenação.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cm300_alexandre_carlos_elias_mael_roberto_saulo_noturno.pdf"
+    },{
+        "codigo": "CM301",
+        "nome": "Cálculo em uma variável real",
+        "prof": "Alexandre Kirilov, Adriana Luiza do Prado, Liangzhong Hu",
+        "dep": "DMAT",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "03/11",
+        "fim": "04/03",
+        "obs": "Totalmente assíncrona.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cm301_alexandre_adriana_liangzhong.pdf"
+    },{
+        "codigo": "CM302",
+        "nome": "Cálculo em várias variáveis reais",
+        "prof": "Adriana Luiz do Prado, Eduardo Hoefel, Elizabeth Wegner Karas, Liangzhong Hu",
+        "dep": "DMAT",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "03/11",
+        "fim": "18/12",
+        "obs": "Totalmente assíncrona.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cm302_adriana_eduardo_elizabeth_liangzhong.pdf"
+    },{
+        "codigo": "LIB038",
+        "nome": " Comunicação em Língua Brasileira de Sinais e Fundamentos da Educação bilíngue de surdos",
+        "prof": "André Nogueira Xavier",
+        "dep": "Coordenação do Curso de Letras",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "05/11",
+        "fim": "17/12",
+        "obs": "Totalmente assíncrona. Plano de ensino disponível no site da coordenação.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/lib038_andre_ficha_02.pdf"
+    },{
+        "codigo": "LIB038",
+        "nome": " Comunicação em Língua Brasileira de Sinais e Fundamentos da Educação bilíngue de surdos",
+        "prof": "Brenno Barros Douettes",
+        "dep": "Coordenação do Curso de Letras",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "03/11",
+        "fim": "19/12",
+        "obs": "Totalmente assíncrona. Plano de ensino disponível no site da coordenação.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/lib038_brenno_ficha_02.pdf"
     }
 ]

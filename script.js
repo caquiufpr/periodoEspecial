@@ -202,7 +202,7 @@ function buildBlock(d) {
     
     // Link to page
     if (d.link) {
-        link.innerHTML = "Ver ementa";
+        link.innerHTML = "Ver ficha";
         link.href = d.link;   
         link.target = "_blank";   
     } else {
