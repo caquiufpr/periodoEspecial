@@ -646,7 +646,7 @@ const cycle4 = [
         "inicio": "09/11",
         "fim": "08/03",
         "obs": "",
-        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq132-e-221-fundamentos-de-quimica-inorganica_herbert_marcio-peres_shirley.pdf"
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq132_221_herbert_marcio-peres_shirley.pdf"
     },{
         "codigo": "CQ133",
         "nome": "Fundamentos de Química Inorgânica II (Grade Antiga)",
@@ -1009,7 +1009,7 @@ const cycle4 = [
         "inicio": "12/01",
         "fim": "16/03",
         "obs": "Aulas assíncronas com períodos síncronos para resolução de exercícios e dúvidas.",
-        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq238_fq1-vidotti.pdf"
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/ficha-2-ere_ii-cq238-marcio-vidotti-corr.pdf"
     },{
         "codigo": "CQ240",
         "nome": "Físico-Química II",
@@ -1020,7 +1020,7 @@ const cycle4 = [
         "inicio": "14/01",
         "fim": "18/03",
         "obs": "Aulas assíncronas com períodos síncronos para resolução de exercícios e dúvidas.",
-        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq240_-fq2-vidotti.pdf"
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/ficha-2-ere_ii-cq240-marcio-vidotti-corr.pdf"
     },{
         "codigo": "GC001",
         "nome": "Geologia I",
@@ -1188,7 +1188,7 @@ const cycle4 = [
         "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cm302_adriana_eduardo_elizabeth_liangzhong.pdf"
     },{
         "codigo": "LIB038",
-        "nome": " Comunicação em Língua Brasileira de Sinais e Fundamentos da Educação bilíngue de surdos",
+        "nome": "Comunicação em Língua Brasileira de Sinais e Fundamentos da Educação bilíngue de surdos",
         "prof": "André Nogueira Xavier",
         "dep": "Coordenação do Curso de Letras",
         "horario": "- -",
@@ -1199,7 +1199,7 @@ const cycle4 = [
         "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/lib038_andre_ficha_02.pdf"
     },{
         "codigo": "LIB038",
-        "nome": " Comunicação em Língua Brasileira de Sinais e Fundamentos da Educação bilíngue de surdos",
+        "nome": "Comunicação em Língua Brasileira de Sinais e Fundamentos da Educação bilíngue de surdos",
         "prof": "Brenno Barros Douettes",
         "dep": "Coordenação do Curso de Letras",
         "horario": "- -",
@@ -1208,5 +1208,126 @@ const cycle4 = [
         "fim": "19/12",
         "obs": "Totalmente assíncrona. Plano de ensino disponível no site da coordenação.",
         "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/lib038_brenno_ficha_02.pdf"
+    },{
+        "codigo": "CQ098",
+        "nome": "Prática Pedagógica: Projetos Integrados II",
+        "prof": "Joanez Aires",
+        "dep": "DQUI",
+        "horario": "15h 20h",
+        "dias": [2],
+        "inicio": "04/11",
+        "fim": "24/02",
+        "obs": "Existe mais uma ficha no site da coordenação.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq098_ficha_02_joanez.pdf"
+    },{
+        "codigo": "CQ099",
+        "nome": "Atividades Complementares",
+        "prof": "Joanez Aires",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "05/11",
+        "fim": "?",
+        "obs": "Os horários serão combinados na primeira aula.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq099_joanez.pdf"
+    },{
+        "codigo": "CQ116",
+        "nome": "Espectroscopia Óptica (Diurno)",
+        "prof": "Joaquim Delphino Da Motta Neto",
+        "dep": "DQUI",
+        "horario": "13h30 15h30",
+        "dias": [0,3],
+        "inicio": "05/11",
+        "fim": "04/03",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq116_joaquim.pdf"
+    },{
+        "codigo": "CQ116",
+        "nome": "Espectroscopia Óptica (Noturno)",
+        "prof": "Joaquim Delphino Da Motta Neto",
+        "dep": "DQUI",
+        "horario": "19h 21h",
+        "dias": [0,3],
+        "inicio": "05/11",
+        "fim": "04/03",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq116_joaquim.pdf"
+    },{
+        "codigo": "ET053",
+        "nome": "Psicologia da Educação (Diurno)",
+        "prof": "Américo Agostinho Rodrigues Walger",
+        "dep": "Departamento de Teoria e Fundamentos da Educação",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "03/02",
+        "fim": "27/03",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/et053_agostinho_diurno.pdf"
+    },{
+        "codigo": "ET054",
+        "nome": "Estágio Supervisionado em Processos Interativos na Educação",
+        "prof": "Talita",
+        "dep": "Departamento de Teoria e Fundamentos da Educação",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "03/02",
+        "fim": "27/07",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/et054_talita_noturno.pdf"
+    },{
+        "codigo": "ET053",
+        "nome": "Psicologia da Educação (Noturno)",
+        "prof": "Américo Agostinho Rodrigues Walger",
+        "dep": "Departamento de Teoria e Fundamentos da Educação",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "03/02",
+        "fim": "27/03",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/et084_agostinho_noturno.pdf"
+    },{
+        "codigo": "ET170",
+        "nome": "Diversidade Étnico-Racial, Gênero e Sexualidade",
+        "prof": "Carolina dos Anjos de Borba",
+        "dep": "Departamento de Teoria e Fundamentos da Educação",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "04/11",
+        "fim": "16/12",
+        "obs": "Encontros síncronos em algumas datas.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/et170_carolina_diurno.pdf"
+    },{
+        "codigo": "ET170",
+        "nome": "Diversidade Étnico-Racial, Gênero e Sexualidade",
+        "prof": "Paulo Vinicius Baptista da Silva",
+        "dep": "Departamento de Teoria e Fundamentos da Educação",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "04/11",
+        "fim": "02/03",
+        "obs": "Encontros síncronos em algumas datas.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/et170_paulo_noturno.pdf"
+    },{
+        "codigo": "ET173",
+        "nome": "Fundamentos da Educação Ambiental",
+        "prof": "Carina Catiana Foppa",
+        "dep": "Departamento de Teoria e Fundamentos da Educação",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "09/11",
+        "fim": "08/03",
+        "obs": "Horários variados, veja a ficha para mais informações.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/et173_carina_diurno.pdf"
+    },{
+        "codigo": "CQ248",
+        "nome": "Filosofia das Ciências para Química",
+        "prof": "Roberto Dalmo Varallo Lima de Oliveira",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [5],
+        "inicio": "04/11",
+        "fim": "18/12",
+        "obs": "Terá aulas síncronas mas com datas variadas, realizadas nas quartas.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq248-filosofia.pdf"
     }
 ]
