@@ -105,28 +105,45 @@ tbody {
 }
 
 .cycle {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 100%;
-    border-color: orangered;
+    border-color: white;
     border-style: solid;
     border-width: 1px;
-    margin: 5px;
+    margin-left: 5px;
     padding: 5px;
     text-align: center;
     cursor: pointer;
     transition-duration: 0.3s;
+    line-height: 15px;
+    font-weight: normal;
 }
 
 .cycle.selected {
-    background-color: orangered;
+    background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    color: white;
+    color: orangered;
 }
 
 .cycle.dis {
     filter: grayscale(1);
     cursor: default;
+}
+
+.cycleHolder {
+    line-height: 27px;
+    border-radius: 20px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 4px;
+    background-color: orangered;
+    display: flex;
+    height: 27px;
+    color: white;
+    margin-right: 8px;
+    font-weight: bold;
+    user-select: none;
 }
 
 #selector {

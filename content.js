@@ -1331,3 +1331,18 @@ const cycle4 = [
         "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2020/09/cq248-filosofia.pdf"
     }
 ]
+
+const cycle5 = [
+    {
+        "codigo": "até o momento",
+        "nome": "Calendário não divulgado",
+        "prof": "-",
+        "dep": "-",
+        "horario": "- -",
+        "dias": [0],
+        "inicio": "",
+        "fim": "",
+        "obs": "",
+        "link": ""
+    }
+]

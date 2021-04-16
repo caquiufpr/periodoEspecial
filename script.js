@@ -1,7 +1,8 @@
 const diasDaSemana = ["Segundas", "Terças", "Quartas", "Quintas", "Sextas", "Dias Variados"];
 const diasDaSemanaA = ["S","T","Q","Q","S"];
-let hue = -20;
+const numberOfCycles = 5;
 let selectedCycle = 4;
+let hue = -20;
 let mis = "<i class=\"menuIcons material-icons\" md-24 md-light style=\"vertical-align: middle;padding: 5px;\">";
 let mif = "</i> ";
 
@@ -81,6 +82,15 @@ function inflateScreen(c) {
                     }
                 })
                 break;
+            case 5:
+                cycle5.map(d => {
+                    // Append to table
+                    for (let i = 0; i < d.dias.length; i++) {
+                        const block = buildBlock(d);
+                        document.getElementById('td'+d.dias[i]).appendChild(block);
+                    }
+                })
+                break;
             default:
                 break;
         }
@@ -127,6 +137,15 @@ function inflateScreen(c) {
                     }
                 })
                 break;
+            case 5:
+                cycle5.map(d => {
+                    // Append to window
+                    for (let i = 0; i < d.dias.length; i++) {
+                        const block = buildBlock(d);
+                        document.getElementById('mc'+d.dias[i]).appendChild(block);
+                    }
+                })
+                break;
             default:
                 break;
         }
@@ -136,7 +155,7 @@ function inflateScreen(c) {
 
 inflateScreen(selectedCycle);
 
-popup("Ainda serão adicionadas mais disciplinas.")
+popup("As disciplinas para o Calendário Acadêmico de 2020.1 ainda não foram divulgadas.")
 
 function buildBlock(d) {
     // Create elements
@@ -253,8 +272,8 @@ function buildBlock(d) {
 }
 
 function cycle(c) {
-    for (let i = 1; i <= 4; i++) {
-        if (c <= 4) {
+    for (let i = 1; i <= numberOfCycles; i++) {
+        if (c <= numberOfCycles && c != selectedCycle) {
         document.getElementById("s"+i).className = "cycle";
         }
     }
@@ -287,6 +306,14 @@ function cycle(c) {
         case 4:
             if (selectedCycle != 4) {
                 inflateScreen(4);
+                document.getElementById("s"+c).className = "cycle selected";
+            } else {
+                popup("Esse ciclo já está selecionado.");
+            }
+            break;
+        case 5:
+            if (selectedCycle != 5) {
+                inflateScreen(5);
                 document.getElementById("s"+c).className = "cycle selected";
             } else {
                 popup("Esse ciclo já está selecionado.");

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 	<head>
-		<title>Grade Horária do Período Especial</title>
+		<title>Grade Horária do Curso de Química</title>
 		<link rel="icon" type="image/webp" href="files/CAQUI.webp" />
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,19 +11,26 @@
 	</head>
 	<body>
         <div id="title">
-            <h1 style="margin-bottom: -10px; font-weight: bold;">Grade Horária do Período Especial</h1>
-            <h2>Curso de Química</h2>
+            <h1 style="margin-bottom: -10px; font-weight: bold;">Grade Horária</h1>
+            <h2>Química UFPR</h2>
             <!-- 👌 -->
         </div>
-        <p style="max-width: 500px; margin: auto; text-align: center; padding: 50px; padding-top: 0;padding-bottom: 10px;;">Na grade abaixo estão as disciplinas que serão ofertadas no Período Especial. Clique em cada disciplina para obter mais informações e altere o ciclo nos botões abaixo.
+        <p style="max-width: 500px; margin: auto; text-align: center; padding: 50px; padding-top: 0;padding-bottom: 10px;;">Na grade abaixo estão as disciplinas que estão sendo ou foram ofertadas pela coordenação nos últimos períodos. Clique em cada uma para obter mais informações e altere o período de oferta com os botões abaixo.
         </p>
         <p style="font-size: 8pt;max-width: 500px; margin: auto; text-align: center; padding: 50px; padding-top: 0; padding-bottom: 20px; font-style: italic">Grade atualizada com as informações do site do Curso de Química às 12h do dia 23/10/2020.</p>
-        <p style="margin-left:5.2vw; font-size: 14pt; margin-bottom: 5px; font-weight: bold;">Ciclo</p>
+        <p style="margin-left:5.2vw; font-size: 14pt; margin-bottom: 5px; font-weight: bold;">Período de Oferta</p>
         <div id="selector">
-            <div id="s1" class="cycle" onclick="cycle(1)">1º</div>
-            <div id="s2" class="cycle" onclick="cycle(2)">2º</div>
-            <div id="s3" class="cycle" onclick="cycle(3)">3º</div>
-            <div id="s4" class="cycle selected" onclick="cycle(4)">4º</div>
+            <div class="cycleHolder">
+                <div>Período Especial</div>
+                <div id="s1" class="cycle" onclick="cycle(1)">1</div>
+                <div id="s2" class="cycle" onclick="cycle(2)">2</div>
+                <div id="s3" class="cycle" onclick="cycle(3)">3</div>
+                <div id="s4" class="cycle selected" onclick="cycle(4)">4</div>
+            </div>
+            <div class="cycleHolder">
+                <div>2020</div>
+                <div id="s5" class="cycle" onclick="cycle(5)">1</div>
+            </div>
         </div>
         <table id="calendar">
         <tr>
