@@ -7,36 +7,67 @@ let mis = "<i class=\"menuIcons material-icons\" md-24 md-light style=\"vertical
 let mif = "</i> ";
 
 let spaceToFill = document.getElementById("tableItem");
+let spaceToFillNEW1 = document.getElementById("tableItemNEW1");
+let spaceToFillNEW2 = document.getElementById("tableItemNEW2");
 let spaceToFillM = document.getElementById("mobile");
 
+// Old table placement on desktop
 for (let i = 0; i <= 4; i++) {
     const cell = document.createElement('td');
     cell.id = "td" + i;
     spaceToFill.appendChild(cell);
 }
 
-function inflateMobile() {
-if (window.innerWidth / window.innerHeight < 1) {
-    spaceToFillM.innerHTML = "";
+// New table placement on desktop
+for (let i = 0; i <= 4; i++) {
+    const cell = document.createElement('td');
+    cell.id = "tdNEW" + i;
+    spaceToFillNEW1.appendChild(cell);
+}
 
-    for (let i = 0; i <= 4; i++) {
+for (let i = 5; i <= 9; i++) {
+    const cell = document.createElement('td');
+    cell.id = "tdNEW" + i;
+    spaceToFillNEW2.appendChild(cell);
+}
+
+// Mobile table generator
+function inflateMobile() {
+    if (window.innerWidth / window.innerHeight < 1) {
+        spaceToFillM.innerHTML = "";
+
+        for (let i = 0; i <= 4; i++) {
+            const mcell = document.createElement('div');
+            mcell.id = "mc" + i;
+            mcell.innerHTML += "<h4>" + diasDaSemana[i] + "</h4>"
+            spaceToFillM.appendChild(mcell);
+        }
+
         const mcell = document.createElement('div');
-        mcell.id = "mc" + i;
-        mcell.innerHTML += "<h4>" + diasDaSemana[i] + "</h4>"
+        mcell.id = "mc5";
+        mcell.innerHTML += "<h4>" + document.getElementById('hv').innerHTML + "</h4>"
         spaceToFillM.appendChild(mcell);
     }
-
-    const mcell = document.createElement('div');
-    mcell.id = "mc5";
-    mcell.innerHTML += "<h4>" + document.getElementById('hv').innerHTML + "</h4>"
-    spaceToFillM.appendChild(mcell);
-}
 }
 
 inflateMobile();
 
+function inflateMobileNEW() {
+    if (window.innerWidth / window.innerHeight < 1) {
+        spaceToFillM.innerHTML = "";
+
+        for (let i = 0; i <= 9; i++) {
+            const mcell = document.createElement('div');
+            mcell.id = "mcNEW" + i;
+            mcell.innerHTML += "<h4>" + (i+1) + "º Período</h4>"
+            spaceToFillM.appendChild(mcell);
+        }
+    }
+}
+
 let id = 0;
 
+// Desktop and mobile inflate based on cycle
 function inflateScreen(c) {
 
     if (window.innerWidth / window.innerHeight > 1) {
@@ -44,6 +75,14 @@ function inflateScreen(c) {
         for (let i = 0; i <= 5; i++) {
             document.getElementById("td"+i).innerHTML = "";
         }
+        
+        for (let i = 0; i <= 9; i++) {
+            document.getElementById("tdNEW"+i).innerHTML = "";
+        }
+
+        document.getElementById("calendar").style.display = "block";
+        document.getElementById("calendarNEW").style.display = "none";
+        document.getElementById('hv').style.display = "block";
 
         switch (c) {
             case 1:
@@ -83,11 +122,14 @@ function inflateScreen(c) {
                 })
                 break;
             case 5:
+                document.getElementById("calendar").style.display = "none";
+                document.getElementById("calendarNEW").style.display = "block";
+                document.getElementById('hv').style.display = "none";
                 cycle5.map(d => {
                     // Append to table
-                    for (let i = 0; i < d.dias.length; i++) {
+                    for (let i = 0; i < d.per.length; i++) {
                         const block = buildBlock(d);
-                        document.getElementById('td'+d.dias[i]).appendChild(block);
+                        document.getElementById('tdNEW'+d.per[i]).appendChild(block);
                     }
                 })
                 break;
@@ -96,9 +138,14 @@ function inflateScreen(c) {
         }
     } else {
         document.getElementById('calendar').style.display = "none";
+        document.getElementById("calendarNEW").style.display = "none";
         document.getElementById('hv').style.display = "none";
 
-        inflateMobile();
+        if (c != 5) {
+            inflateMobile();
+        } else {
+            inflateMobileNEW();
+        }
 
         switch (c) {
             case 1:
@@ -140,9 +187,9 @@ function inflateScreen(c) {
             case 5:
                 cycle5.map(d => {
                     // Append to window
-                    for (let i = 0; i < d.dias.length; i++) {
+                    for (let i = 0; i < d.per.length; i++) {
                         const block = buildBlock(d);
-                        document.getElementById('mc'+d.dias[i]).appendChild(block);
+                        document.getElementById('mcNEW'+d.per[i]).appendChild(block);
                     }
                 })
                 break;

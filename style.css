@@ -11,7 +11,7 @@ body {
     margin-left: 3vw;
 }
 
-#calendar {
+#calendar, #calendarNEW {
     width: 90vw;
     min-width: 1000px;
     margin-left: 5vw;
