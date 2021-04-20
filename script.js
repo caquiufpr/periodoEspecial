@@ -56,12 +56,18 @@ function inflateMobileNEW() {
     if (window.innerWidth / window.innerHeight < 1) {
         spaceToFillM.innerHTML = "";
 
-        for (let i = 0; i <= 9; i++) {
+        for (let i = 0; i <= 8; i++) {
             const mcell = document.createElement('div');
             mcell.id = "mcNEW" + i;
-            mcell.innerHTML += "<h4>" + (i+1) + "º Período</h4>"
+            mcell.innerHTML += "<h4>" + (i+1) + "º Semestre</h4>"
             spaceToFillM.appendChild(mcell);
         }
+
+        const mcell = document.createElement('div');
+        mcell.id = "mcNEW9";
+        mcell.innerHTML += "<h4>Optativas</h4>"
+        spaceToFillM.appendChild(mcell);
+
     }
 }
 
