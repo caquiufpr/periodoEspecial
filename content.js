@@ -2194,7 +2194,7 @@ const cycle5 = [
         "dias": [5],
         "inicio": "07/05",
         "fim": "20/08",
-        "obs": "Ocorreram alguns encontros síncronos e assíncronos, verificar o cronograma",
+        "obs": "Ocorrerão alguns encontros síncronos e assíncronos, verificar o cronograma",
         "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/04/cq244_marcio_vidotti.pdf",
         "per": [3, 4]
     },{
