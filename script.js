@@ -208,7 +208,7 @@ function inflateScreen(c) {
 
 inflateScreen(selectedCycle);
 
-popup("As disciplinas para o Calendário Acadêmico de 2020.1 ainda estão sendo adicionadas.")
+//popup("As disciplinas para o Calendário Acadêmico de 2020.1 ainda estão sendo adicionadas.")
 
 function buildBlock(d) {
     // Create elements
