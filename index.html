@@ -17,19 +17,24 @@
         </div>
         <p style="max-width: 500px; margin: auto; text-align: center; padding: 50px; padding-top: 0;padding-bottom: 10px;;">Na grade abaixo estão as disciplinas que estão sendo ou foram ofertadas pela coordenação nos últimos períodos. Clique em cada uma para obter mais informações e altere o período de oferta com os botões abaixo.
         </p>
-        <p style="font-size: 8pt;max-width: 500px; margin: auto; text-align: center; padding: 50px; padding-top: 0; padding-bottom: 20px; font-style: italic">Grade atualizada com as informações do site do Curso de Química às 15h do dia 16/04/2021.</p>
+        <p style="font-size: 8pt;max-width: 500px; margin: auto; text-align: center; padding: 50px; padding-top: 0; padding-bottom: 20px; font-style: italic">Grade atualizada com as informações do site do Curso de Química às 13h do dia 21/04/2021.</p>
         <p style="margin-left:5.2vw; font-size: 14pt; margin-bottom: 5px; font-weight: bold;">Período de Oferta</p>
         <div id="selector">
+            <!-- <div class="cycleHolder" style="padding-right: 8px; cursor: pointer;" onclick="searchStart()">
+                <span class="material-icons">
+                    search
+                </span>
+            </div> -->
             <div class="cycleHolder">
                 <div>Período Especial</div>
                 <div id="s1" class="cycle" onclick="cycle(1)">1</div>
                 <div id="s2" class="cycle" onclick="cycle(2)">2</div>
                 <div id="s3" class="cycle" onclick="cycle(3)">3</div>
-                <div id="s4" class="cycle selected" onclick="cycle(4)">4</div>
+                <div id="s4" class="cycle" onclick="cycle(4)">4</div>
             </div>
             <div class="cycleHolder">
                 <div>2020</div>
-                <div id="s5" class="cycle" onclick="cycle(5)">1</div>
+                <div id="s5" class="cycle selected" onclick="cycle(5)">1</div>
             </div>
         </div>
         <p style="margin: 8px; margin-left: 5vw; font-size: 8pt; padding-bottom: 20px; font-style: italic">Clique nos números para alternar</p>
@@ -79,6 +84,42 @@
             <a class="link" target="_blank" href="http://www.quimica.ufpr.br/paginas/graduacao/ofertas-para-periodo-especial-ii-ciclo-4/">Fichas das Disciplinas</a>
             </div>
         </div>
+
+        <!-- Search engine
+        <div id="searchEngine">
+            <h1>Pesquisar</h1>
+            <p>Selecione o filtro e pesquise entre as disciplinas ofertadas.</p>
+            <br>
+            <div id="searchFilters">
+                <div class="searchCat">
+                    <select class="select-text" name="searchType" id="searchType" required>
+                        <option value="" disabled selected></option>
+                        <option value="nome">Nome da disciplina</option>
+                        <option value="code">Código</option>
+                        <option value="code">Professor</option>
+                        <option value="dep">Departamento</option>
+                    </select>
+                    <span class="select-highlight"></span>
+					<span class="select-bar"></span>
+                    <label class="select-label">Tipo de pesquisa:</label>
+                </div>
+                <div class="searchCat">
+                    <select class="select-text" name="searchPeriod" id="searchPeriod" required>
+                        <option value="" disabled selected></option>
+                        <option value="2020.1">2020/1</option>
+                        <option value="4">4º Ciclo PE</option>
+                        <option value="3">3º Ciclo PE</option>
+                        <option value="2">2º Ciclo PE</option>
+                        <option value="1">1º Ciclo PE</option>
+                    </select>
+                    <span class="select-highlight"></span>
+					<span class="select-bar"></span>
+                    <label class="select-label">Período de Oferta</label>
+                </div>
+                <input class="searchBox" type="search" id="searchTerm" onkeyup="search()">
+            </div>
+
+        </div> -->
 
         <div id="popup"></div>
         <img src="files/Logo.png" width="80px" height="80px" id="logo" alt="Logo CAQuí">

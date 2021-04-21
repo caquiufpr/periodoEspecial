@@ -1,7 +1,7 @@
 const diasDaSemana = ["Segundas", "Terças", "Quartas", "Quintas", "Sextas", "Dias Variados"];
 const diasDaSemanaA = ["S","T","Q","Q","S"];
 const numberOfCycles = 5;
-let selectedCycle = 4;
+let selectedCycle = 5;
 let hue = -20;
 let mis = "<i class=\"menuIcons material-icons\" md-24 md-light style=\"vertical-align: middle;padding: 5px;\">";
 let mif = "</i> ";
@@ -208,7 +208,7 @@ function inflateScreen(c) {
 
 inflateScreen(selectedCycle);
 
-popup("As disciplinas para o Calendário Acadêmico de 2020.1 ainda não foram divulgadas.")
+popup("As disciplinas para o Calendário Acadêmico de 2020.1 ainda estão sendo adicionadas.")
 
 function buildBlock(d) {
     // Create elements
