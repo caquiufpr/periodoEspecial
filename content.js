@@ -2182,7 +2182,7 @@ const cycle5 = [
         "dias": [5],
         "inicio": "07/05",
         "fim": "13/08",
-        "obs": "Ocorreram alguns encontros síncronos, verificar o cronograma",
+        "obs": "Ocorrerão alguns encontros síncronos, verificar o cronograma",
         "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/04/cq248_diurno_roberto_dalmo.pdf",
         "per": [0]
     },{
