@@ -2232,7 +2232,7 @@ const cycle5 = [
         "fim": "23/08",
         "obs": "",
         "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/04/cq231_turmad1_diurno_daniel.pdf",
-        "per": [1, 2]
+        "per": [2]
     },{
         "codigo": "CQ231",
         "nome": "Química Orgânica I",
@@ -2244,7 +2244,7 @@ const cycle5 = [
         "fim": "23/08",
         "obs": "",
         "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/04/cq231_turma_d2_noturno_caroline.pdf",
-        "per": [1, 2]
+        "per": [1]
     },{
         "codigo": "CQ223",
         "nome": "Química Inorgânica III",
