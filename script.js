@@ -276,7 +276,7 @@ function buildBlock(d) {
     if (d.link) {
         link.innerHTML = "Ver ficha";
         link.href = d.link;   
-        //link.target = "_blank";   
+        link.target = "_self";   
     } else {
         link.style.display = "none";
     }
