@@ -55,7 +55,7 @@ body {
 }
 
 .buttonInfos {
-    display: block;
+    /* display: block; */
     padding: 5px;
     border: solid;
     border-radius: 4px;
