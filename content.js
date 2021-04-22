@@ -1338,11 +1338,11 @@ const cycle5 = [
         "nome": "Física I (Diurno)",
         "prof": "Mauro Gomes Rodbard",
         "dep": "DFIS",
-        "horario": "- -",
-        "dias": [5],
+        "horario": "15h30 17h30",
+        "dias": [0,2],
         "inicio": "03/05",
         "fim": "18/08",
-        "obs": "Não foram informados os dias e horários de aula.",
+        "obs": "",
         "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/04/cf109-d.pdf",
         "per": [3]
     },{
