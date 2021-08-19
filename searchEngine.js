@@ -39,8 +39,11 @@ function search() {
         case "5":
             fSearch = searchEngine(searchTerm, currType, cycle5);
             break;
+        case "6":
+            fSearch = searchEngine(searchTerm, currType, cycle6);
+            break;
         default:
-            //fSearch = JSON.parse(cycle1);
+            popup("Erro na seleção do período.");
             break;
         
     }

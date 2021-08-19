@@ -1,6 +1,6 @@
 const diasDaSemana = ["Segundas", "Terças", "Quartas", "Quintas", "Sextas", "Dias Variados"];
 const diasDaSemanaA = ["S","T","Q","Q","S"];
-const numberOfCycles = 5;
+const numberOfCycles = 6;
 let selectedCycle = 5;
 let hue = -20;
 let mis = "<i class=\"menuIcons material-icons\" md-24 md-light style=\"vertical-align: middle;padding: 5px;\">";
@@ -139,6 +139,18 @@ function inflateScreen(c) {
                     }
                 })
                 break;
+            case 6:
+                document.getElementById("calendar").style.display = "none";
+                document.getElementById("calendarNEW").style.display = "block";
+                document.getElementById('hv').style.display = "none";
+                cycle6.map(d => {
+                    // Append to table
+                    for (let i = 0; i < d.per.length; i++) {
+                        const block = buildBlock(d);
+                        document.getElementById('tdNEW'+d.per[i]).appendChild(block);
+                    }
+                })
+                break;
             default:
                 break;
         }
@@ -192,6 +204,15 @@ function inflateScreen(c) {
                 break;
             case 5:
                 cycle5.map(d => {
+                    // Append to window
+                    for (let i = 0; i < d.per.length; i++) {
+                        const block = buildBlock(d);
+                        document.getElementById('mcNEW'+d.per[i]).appendChild(block);
+                    }
+                })
+                break;
+            case 6:
+                cycle6.map(d => {
                     // Append to window
                     for (let i = 0; i < d.per.length; i++) {
                         const block = buildBlock(d);
@@ -371,6 +392,10 @@ function cycle(c) {
             } else {
                 popup("Esse ciclo já está selecionado.");
             }
+            break;
+        case 6:
+            document.getElementById("s"+c).className = "cycle selected"
+            popup("As disciplinas para este período ainda não foram divulgadas.");
             break;
         default:
             break;
