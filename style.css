@@ -124,7 +124,7 @@ tbody {
 .cycle.selected {
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    color: orangered;
+    color: #f76600;
 }
 
 .cycle.dis {
@@ -138,7 +138,7 @@ tbody {
     padding: 4px;
     padding-left: 8px;
     padding-right: 4px;
-    background-color: orangered;
+    background-color: #f76600;
     display: flex;
     height: 27px;
     color: white;
@@ -336,5 +336,17 @@ tbody {
     .box {
         width: 82vw;
         max-width: none;
+    }
+    #searchFilters {
+        margin-top: 52px;
+    }
+    #searchField {
+        width: 85vw;
+    }
+    .select-text {
+        margin-left: 12px;
+    }
+    #searchBox {
+        margin-bottom: 64px;
     }
   }
