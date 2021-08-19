@@ -145,11 +145,14 @@ tbody {
     margin-right: 8px;
     font-weight: bold;
     user-select: none;
+    margin-bottom: 8px;
 }
 
 #selector {
     display: flex;
     margin-left: 5vw;
+    flex-wrap: wrap;
+    width: 90vw;
 }
 
 .weekHolder {
@@ -331,6 +334,7 @@ tbody {
 
   @media all and (max-width: 50em) {
     .box {
-        width: 90vw;
+        width: 82vw;
+        max-width: none;
     }
   }
