@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Grade horária com as disiplinas presentes no período especial, organizada pelo Centro Acadêmico de Química da UFPR.">
 	</head>
-	<body>
+	<body id="body">
         <div id="title">
             <h1 style="margin-bottom: -10px; font-weight: bold;">Grade Horária</h1>
             <h2>Química UFPR</h2>
@@ -20,11 +20,12 @@
         <p style="font-size: 8pt;max-width: 500px; margin: auto; text-align: center; padding: 50px; padding-top: 0; padding-bottom: 20px; font-style: italic">Grade atualizada com as informações do site do Curso de Química às 11h do dia 22/04/2021.</p>
         <p style="margin-left:5.2vw; font-size: 14pt; margin-bottom: 5px; font-weight: bold;">Período de Oferta</p>
         <div id="selector">
-            <!-- <div class="cycleHolder" style="padding-right: 8px; cursor: pointer;" onclick="searchStart()">
+            <div class="cycleHolder" style="padding-right: 8px; cursor: pointer;" onclick="searchStart()">
                 <span class="material-icons">
                     search
                 </span>
-            </div> -->
+                Pesquisar
+            </div>
             <div class="cycleHolder">
                 <div>Período Especial</div>
                 <div id="s1" class="cycle" onclick="cycle(1)">1</div>
@@ -93,46 +94,52 @@
             <br>
         </div>
 
-        <!-- Search engine
-        <div id="searchEngine">
+        <!-- Search engine -->
+        <div id="searchEngine" class="hidden">
+            <span class="material-icons" style="position: absolute; top: 5vw; right: 5vw; cursor: pointer;" onclick="searchStart()">
+                close
+            </span>
             <h1>Pesquisar</h1>
-            <p>Selecione o filtro e pesquise entre as disciplinas ofertadas.</p>
+            <p style="margin: 0;">Busque disciplinas, professores e departamentos a partir do período de oferta desejado.</p>
             <br>
-            <div id="searchFilters">
-                <div class="searchCat">
-                    <select class="select-text" name="searchType" id="searchType" required>
-                        <option value="" disabled selected></option>
-                        <option value="nome">Nome da disciplina</option>
-                        <option value="code">Código</option>
-                        <option value="code">Professor</option>
-                        <option value="dep">Departamento</option>
-                    </select>
-                    <span class="select-highlight"></span>
-					<span class="select-bar"></span>
-                    <label class="select-label">Tipo de pesquisa:</label>
+            <div id="searchBox">
+                <span class="material-icons" style="color: hsl(0deg, 0%, 20%);">
+                    search
+                </span>
+                <input onkeyup="search()" type="text" id="searchField" autocomplete="off" autocorrect="off" placeholder="O que você está buscando?">
+                <div id="searchFilters">
+                    <div class="searchCat">
+                        <select class="select-text" name="searchType" id="searchType" required>
+                            <option value="Categoria" disabled>Categoria</option>
+                            <option value="nome" selected>Nome da disciplina</option>
+                            <option value="codigo">Código</option>
+                            <option value="prof">Professor</option>
+                            <option value="dep">Departamento</option>
+                        </select>
+                    </div>
+                    <div class="searchCat">
+                        <select class="select-text" name="searchPeriod" id="searchPeriod" required>
+                            <option value=6 disabled>Período</option>
+                            <option value=5 selected>2020/1</option>
+                            <option value=4>4º Ciclo PE</option>
+                            <option value=3>3º Ciclo PE</option>
+                            <option value=2>2º Ciclo PE</option>
+                            <option value=1>1º Ciclo PE</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="searchCat">
-                    <select class="select-text" name="searchPeriod" id="searchPeriod" required>
-                        <option value="" disabled selected></option>
-                        <option value="2020.1">2020/1</option>
-                        <option value="4">4º Ciclo PE</option>
-                        <option value="3">3º Ciclo PE</option>
-                        <option value="2">2º Ciclo PE</option>
-                        <option value="1">1º Ciclo PE</option>
-                    </select>
-                    <span class="select-highlight"></span>
-					<span class="select-bar"></span>
-                    <label class="select-label">Período de Oferta</label>
-                </div>
-                <input class="searchBox" type="search" id="searchTerm" onkeyup="search()">
             </div>
+            <div id="searchResults">
 
-        </div> -->
+            </div>
+        </div>
 
         <div id="popup"></div>
         <img src="files/Logo.png" width="80px" height="80px" id="logo" alt="Logo CAQuí">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript" src="content.js"></script>
+        <script type="text/javascript" src="searchEngine.js"></script>
         <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
