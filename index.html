@@ -17,7 +17,9 @@
         </div>
         <p style="max-width: 500px; margin: auto; text-align: center; padding: 50px; padding-top: 0;padding-bottom: 10px;;">Na grade abaixo estão as disciplinas que estão sendo ou foram ofertadas pela coordenação nos últimos períodos. Clique em cada uma para obter mais informações e altere o período de oferta com os botões abaixo.
         </p>
-        <p style="font-size: 8pt;max-width: 500px; margin: auto; text-align: center; padding: 50px; padding-top: 0; padding-bottom: 20px; font-style: italic">Grade atualizada com as informações do site do Curso de Química às 11h do dia 22/04/2021.</p>
+        <p style="font-size: 8pt;max-width: 500px; margin: auto; text-align: center; padding: 50px; padding-top: 0; padding-bottom: 20px; font-style: italic">
+            Grade atualizada com as informações do site do Curso de Química às 10h do dia 31/08/2021.
+        </p>
         <p style="margin-left:5.2vw; font-size: 14pt; margin-bottom: 5px; font-weight: bold;">Período de Oferta</p>
         <div id="selector">
             <div class="cycleHolder" style="padding-right: 8px; cursor: pointer;" onclick="searchStart()">
@@ -35,11 +37,11 @@
             </div>
             <div class="cycleHolder">
                 <div>2020</div>
-                <div id="s5" class="cycle selected" onclick="cycle(5)">2</div>
+                <div id="s5" class="cycle" onclick="cycle(5)">2</div>
             </div>
             <div class="cycleHolder">
                 <div>2021</div>
-                <div id="s6" class="cycle" onclick="cycle(6)">1</div>
+                <div id="s6" class="cycle selected" onclick="cycle(6)">1</div>
             </div>
         </div>
         <p style="margin: 8px; margin-left: 5vw; font-size: 8pt; padding-bottom: 20px; font-style: italic">Clique nos números para alternar</p>
@@ -85,8 +87,7 @@
             <p>Abaixo estão alguns links importantes para obter mais informações sobre a oferta das disciplinas.</p>
             <a class="link" target="_blank" href="https://www.prppg.ufpr.br/siga/">Siga</a>
             <a class="link" target="_blank" href="https://youtu.be/h5O44OOON64">Tutorial Siga</a>
-            <a class="link" target="_blank" href="http://www.quimica.ufpr.br/paginas/graduacao/resolucao-no-22-21-cepe/">Resolução CEPE Calendário 2020 e fichas</a>
-            <a class="link" target="_blank" href="http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/04/aulas-sincronas-planilha-2020-1-e-2-x.xlsx">Grade Horária com as disciplinas 2020</a>
+            <a class="link" target="_blank" href="http://www.quimica.ufpr.br/paginas/graduacao/ofertas-2021-1s/">Fichas das disciplinas</a>
             </div>
             <p style="margin-left: 5vw; font-size: 10pt;">
                 Por algum motivo, em dispositivos móveis as fichas não estão abrindo corretamente. Caso isso aconteça, segure no botão e aperte para abrir em uma nova guia.
@@ -114,22 +115,24 @@
                 <div id="searchFilters">
                     <div class="searchCat">
                         <select class="select-text" name="searchType" id="searchType" required>
-                            <option value="Categoria" disabled>Categoria</option>
-                            <option value="nome" selected>Nome da disciplina</option>
-                            <option value="codigo">Código</option>
-                            <option value="prof">Professor</option>
-                            <option value="dep">Departamento</option>
+                            <optgroup label="Categoria">
+                                <option value="nome" selected>Nome da disciplina</option>
+                                <option value="codigo">Código</option>
+                                <option value="prof">Professor</option>
+                                <option value="dep">Departamento</option>
+                            </optgroup>
                         </select>
                     </div>
                     <div class="searchCat">
                         <select class="select-text" name="searchPeriod" id="searchPeriod" required>
-                            <option value=0 disabled>Período</option>
-                            <option value=6 disabled>2021/1</option>
-                            <option value=5 selected>2020/1</option>
-                            <option value=4>4º Ciclo PE</option>
-                            <option value=3>3º Ciclo PE</option>
-                            <option value=2>2º Ciclo PE</option>
-                            <option value=1>1º Ciclo PE</option>
+                            <optgroup label="Período de Oferta">
+                                <option value=6 selected>2021/1</option>
+                                <option value=5>2020/1</option>
+                                <option value=4>4º Ciclo PE</option>
+                                <option value=3>3º Ciclo PE</option>
+                                <option value=2>2º Ciclo PE</option>
+                                <option value=1>1º Ciclo PE</option>
+                            </optgroup>
                         </select>
                     </div>
                 </div>

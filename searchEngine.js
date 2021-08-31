@@ -5,12 +5,11 @@ function searchEngine(searchString, searchKey, searchData) {
 
 	$.each(searchData, function(i, item) {
 		//console.log(this[searchKey].indexOf(searchString));
-		if (this[searchKey].toLowerCase().indexOf(searchString) > 0) {
+		if (this[searchKey].toLowerCase().indexOf(searchString) >= 0 && searchString != "") {
 			result.push(item);
 		}
 
 	});
-	//isotopeInit();
 	return result;
 };
 

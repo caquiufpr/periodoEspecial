@@ -1,7 +1,7 @@
 const diasDaSemana = ["Segundas", "Terças", "Quartas", "Quintas", "Sextas", "Dias Variados"];
 const diasDaSemanaA = ["S","T","Q","Q","S"];
 const numberOfCycles = 6;
-let selectedCycle = 5;
+let selectedCycle = 6;
 let hue = -20;
 let mis = "<i class=\"menuIcons material-icons\" md-24 md-light style=\"vertical-align: middle;padding: 5px;\">";
 let mif = "</i> ";
@@ -150,6 +150,7 @@ function inflateScreen(c) {
                         document.getElementById('tdNEW'+d.per[i]).appendChild(block);
                     }
                 })
+                popup("As disciplinas para este período ainda estão sendo adicionadas.");
                 break;
             default:
                 break;
@@ -219,6 +220,7 @@ function inflateScreen(c) {
                         document.getElementById('mcNEW'+d.per[i]).appendChild(block);
                     }
                 })
+                popup("As disciplinas para este período ainda estão sendo adicionadas.");
                 break;
             default:
                 break;
@@ -394,8 +396,13 @@ function cycle(c) {
             }
             break;
         case 6:
-            document.getElementById("s"+c).className = "cycle selected"
-            popup("As disciplinas para este período ainda não foram divulgadas.");
+            if (selectedCycle != 6) {
+                inflateScreen(6);
+                document.getElementById("s"+c).className = "cycle selected";
+            } else {
+                popup("Esse ciclo já está selecionado.");
+            }
+            popup("As disciplinas para este período ainda estão sendo adicionadas.");
             break;
         default:
             break;
