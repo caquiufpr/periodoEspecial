@@ -2621,17 +2621,4 @@ const cycle5 = [
 ]
 
 const cycle6 = [
-    {
-        "codigo": "CQ057",
-        "nome": "Introdução à Química Nuclear",
-        "prof": "Ronny Ribeiro",
-        "dep": "DEQ",
-        "horario": "- -",
-        "dias": [5],
-        "inicio": "-",
-        "fim": "-",
-        "obs": "Apenas um aviso com relação à diciplina, sua oferta não é garantida.",
-        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/aviso-cq057-introducao-a-quimica-nuclear.docx",
-        "per": [10,10,10,10,10,10,10]
-    }
 ]
