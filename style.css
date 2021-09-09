@@ -1,13 +1,16 @@
 body {
-  margin: 0;
-  font-family: 'Muli', sans-serif;
-  background-color: white;
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+    background-color: white;
+}
+
+#sectionTitle {
+    display: flex;
+    margin: 5vw;
+    margin-bottom: 0;
 }
 
 #title {
-    text-align: center;
-    width: 94vw;
-    margin-top: 50px;
     margin-left: 3vw;
 }
 
@@ -22,9 +25,9 @@ body {
 .box {
     min-height: 50px;
     width: 15vw;
-    max-width: 250px;
+    max-width: 300 px;
     flex-grow: 1;
-    border-radius: 4px;
+    border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     margin: 5px;
     margin-bottom: 10px;
@@ -190,7 +193,9 @@ tbody {
 }
 
 /* Search engine */
+
 /* Code from: https://codepen.io/pavelvaravko/pen/qjojOr */
+
 #searchEngine {
     width: 90vw;
     height: 90vh;
@@ -218,13 +223,14 @@ tbody {
 }
 
 /* select starting stylings ------------------------------*/
+
 .searchCat {
-      position: relative;
-      width: 180px;
-      margin-left: 8px;
-      margin-top: -3px;
-  }
-  
+    position: relative;
+    width: 180px;
+    margin-left: 8px;
+    margin-top: -3px;
+}
+
 .select-text {
     position: relative;
     font-family: inherit;
@@ -239,14 +245,16 @@ tbody {
 }
 
 /* Remove focus */
+
 .select-text:focus {
     outline: none;
 }
 
 /* Use custom arrow */
+
 .select .select-text {
     appearance: none;
-    -webkit-appearance:none
+    -webkit-appearance: none
 }
 
 .select:after {
@@ -265,6 +273,7 @@ tbody {
 }
 
 /* Search Box */
+
 #searchBox {
     width: 85vw;
     height: 24px;
@@ -295,23 +304,64 @@ tbody {
     flex-direction: row;
 }
 
+#darkBg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0%;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.28);
+    overflow-y: scroll;
+}
+
+#featureImg {
+    max-width: 20vw;
+}
+
+#selectCoursePopUp {
+    width: 40vw;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.28);
+    position: relative;
+    top: 5%;
+    left: 50%;
+    padding: 5vh 5vw 5vh 5vw;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.startButton {
+    background-color: inherit;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #f76600;
+    color: #f76600;
+    padding-right: 8px;
+    filter: saturate(0);
+    transition-duration: 300ms;
+}
+
 /* Material Icons */
+
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-    src: local('Material Icons'),
-      local('MaterialIcons-Regular'),
-      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-  }
-  .material-icons {
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'), url(https://example.com/MaterialIcons-Regular.woff) format('woff'), url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+    font-size: 24px;
+    /* Preferred icon size */
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -319,20 +369,22 @@ tbody {
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-  
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
     /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
-  
     /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
-  
     /* Support for IE. */
     font-feature-settings: 'liga';
-  }
+}
 
-  @media all and (max-width: 50em) {
+@media all and (max-width: 50em) {
+    #sectionTitle {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     .box {
         width: 82vw;
         max-width: none;
@@ -349,4 +401,10 @@ tbody {
     #searchBox {
         margin-bottom: 64px;
     }
-  }
+    #selectCoursePopUp {
+        width: 80vw;
+    }
+    #featureImg {
+        max-width: 60vw;
+    }
+}

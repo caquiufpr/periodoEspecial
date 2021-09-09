@@ -1,153 +1,232 @@
 <!DOCTYPE html>
 <html lang="pt">
-	<head>
-		<title>Grade Horária do Curso de Química</title>
-		<link rel="icon" type="image/webp" href="files/CAQUI.webp" />
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+<head>
+    <title>Grade Horária do Curso de Química</title>
+    <link rel="icon" type="image/webp" href="files/CAQUI.webp" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap&subset=latin-ext" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Grade horária com as disiplinas presentes no período especial, organizada pelo Centro Acadêmico de Química da UFPR.">
-	</head>
-	<body id="body">
+    <meta name="description"
+        content="Grade horária com as disiplinas presentes no período especial, organizada pelo Centro Acadêmico de Química da UFPR.">
+</head>
+
+<body id="body" style="overflow: hidden;">
+    <section id="sectionTitle">
+        <img src="files/schedule.svg" alt="Imagem de um bloco de anotações com uma organização de eventos."
+            id="featureImg">
         <div id="title">
             <h1 style="margin-bottom: -10px; font-weight: bold;">Grade Horária</h1>
             <h2>Química UFPR</h2>
             <!-- 👌 -->
-        </div>
-        <p style="max-width: 500px; margin: auto; text-align: center; padding: 50px; padding-top: 0;padding-bottom: 10px;;">Na grade abaixo estão as disciplinas que estão sendo ou foram ofertadas pela coordenação nos últimos períodos. Clique em cada uma para obter mais informações e altere o período de oferta com os botões abaixo.
-        </p>
-        <p style="font-size: 8pt;max-width: 500px; margin: auto; text-align: center; padding: 50px; padding-top: 0; padding-bottom: 20px; font-style: italic">
-            Grade atualizada com as informações do site do Curso de Química às 10h do dia 31/08/2021.
-        </p>
-        <p style="margin-left:5.2vw; font-size: 14pt; margin-bottom: 5px; font-weight: bold;">Período de Oferta</p>
-        <div id="selector">
-            <div class="cycleHolder" style="padding-right: 8px; cursor: pointer;" onclick="searchStart()">
-                <span class="material-icons">
-                    search
-                </span>
-                Pesquisar
-            </div>
-            <div class="cycleHolder">
-                <div>Período Especial</div>
-                <div id="s1" class="cycle" onclick="cycle(1)">1</div>
-                <div id="s2" class="cycle" onclick="cycle(2)">2</div>
-                <div id="s3" class="cycle" onclick="cycle(3)">3</div>
-                <div id="s4" class="cycle" onclick="cycle(4)">4</div>
-            </div>
-            <div class="cycleHolder">
-                <div>2020</div>
-                <div id="s5" class="cycle" onclick="cycle(5)">2</div>
-            </div>
-            <div class="cycleHolder">
-                <div>2021</div>
-                <div id="s6" class="cycle selected" onclick="cycle(6)">1</div>
-            </div>
-        </div>
-        <p style="margin: 8px; margin-left: 5vw; font-size: 8pt; padding-bottom: 20px; font-style: italic">Clique nos números para alternar</p>
-        <table id="calendar">
-            <tr>
-                <th>Segundas</th>
-                <th>Terças</th>
-                <th>Quartas</th>
-                <th>Quintas</th>
-                <th>Sextas</th>
-            </tr>
-            <tr id="tableItem"></tr>
-        </table>
-        <table id="calendarNEW" style="display: none;">
-            <tr>
-                <th>1º Semestre</th>
-                <th>2º Semestre</th>
-                <th>3º Semestre</th>
-                <th>4º Semestre</th>
-                <th>5º Semestre</th>
-            </tr>
-            <tr id="tableItemNEW1"></tr>
-            <tr>
-                <th>6º Semestre</th>
-                <th>7º Semestre</th>
-                <th>8º Semestre</th>
-                <th>9º Semestre</th>
-                <th>Optativas</th>
-            </tr>
-            <tr id="tableItemNEW2"></tr>
-        </table>
-
-        <div id="mobile"></div>
-
-        <div id="hv" style="margin-left: 5vw; margin-bottom: 50px;">
-            <h3>Disciplinas com calendário variável</h3>
-            <p style="max-width: 500px;">Os dias da semana em que essas disciplinas são realizadas é variável ou são assíncronas. Confira a ementa de cada uma para saber mais.</p>
-            <div id="td5"></div>
-        </div>
-
-        <div style="margin-left: 5vw; margin-bottom: 50px">
-            <h3>Links Úteis</h3>
-            <p>Abaixo estão alguns links importantes para obter mais informações sobre a oferta das disciplinas.</p>
-            <a class="link" target="_blank" href="https://www.prppg.ufpr.br/siga/">Siga</a>
-            <a class="link" target="_blank" href="https://youtu.be/h5O44OOON64">Tutorial Siga</a>
-            <a class="link" target="_blank" href="http://www.quimica.ufpr.br/paginas/graduacao/ofertas-2021-1s/">Fichas das disciplinas</a>
-            </div>
-            <p style="margin-left: 5vw; font-size: 10pt;">
-                Por algum motivo, em dispositivos móveis as fichas não estão abrindo corretamente. Caso isso aconteça, segure no botão e aperte para abrir em uma nova guia.
-                <br><br>
-                Notou algum erro no site? Entre em contato através de nossas redes sociais ou <a href="mailto:caquimprensa@gmail.com">email</a>!
-                <br>
-                Desenvolvido por <a href="mailto:vicenteparmigiani@ufpr.br">Vicente K. Parmigiani</a>, 2021.
+            <p
+                style="max-width: 500px;">
+                Na grade abaixo estão as disciplinas que estão sendo ou foram ofertadas pela coordenação nos últimos
+                períodos.
+                Clique em cada uma para obter mais informações e altere o período de oferta com os botões abaixo.
             </p>
-            <br>
+            <p
+                style="font-size: 8pt;max-width: 500px; padding-bottom: 20px; font-style: italic">
+                Grade atualizada com as informações do site do Curso de Química às 10h do dia 31/08/2021.
+            </p>
         </div>
-
-        <!-- Search engine -->
-        <div id="searchEngine" class="hidden">
-            <span class="material-icons" style="position: absolute; top: 5vw; right: 5vw; cursor: pointer;" onclick="searchStart()">
-                close
+    </section>
+    <p style="margin-left:5.2vw; font-size: 14pt; margin-bottom: 5px; font-weight: bold;">Período de Oferta</p>
+    <div id="selector">
+        <div class="cycleHolder" style="padding-right: 8px; cursor: pointer;" onclick="searchStart()">
+            <span class="material-icons">
+                search
             </span>
-            <h1>Pesquisar</h1>
-            <p style="margin: 0;">Busque disciplinas, professores e departamentos a partir do período de oferta desejado.</p>
-            <br>
-            <div id="searchBox">
-                <span class="material-icons" style="color: hsl(0deg, 0%, 20%);">
-                    search
-                </span>
-                <input onkeyup="search()" type="text" id="searchField" autocomplete="off" autocorrect="off" placeholder="O que você está buscando?">
-                <div id="searchFilters">
-                    <div class="searchCat">
-                        <select class="select-text" name="searchType" id="searchType" required>
-                            <optgroup label="Categoria">
-                                <option value="nome" selected>Nome da disciplina</option>
-                                <option value="codigo">Código</option>
-                                <option value="prof">Professor</option>
-                                <option value="dep">Departamento</option>
-                            </optgroup>
-                        </select>
-                    </div>
-                    <div class="searchCat">
-                        <select class="select-text" name="searchPeriod" id="searchPeriod" required>
-                            <optgroup label="Período de Oferta">
-                                <option value=6 selected>2021/1</option>
-                                <option value=5>2020/1</option>
-                                <option value=4>4º Ciclo PE</option>
-                                <option value=3>3º Ciclo PE</option>
-                                <option value=2>2º Ciclo PE</option>
-                                <option value=1>1º Ciclo PE</option>
-                            </optgroup>
-                        </select>
-                    </div>
+            Pesquisar
+        </div>
+        <div class="cycleHolder">
+            <div>Período Especial</div>
+            <div id="s1" class="cycle" onclick="cycle(1)">1</div>
+            <div id="s2" class="cycle" onclick="cycle(2)">2</div>
+            <div id="s3" class="cycle" onclick="cycle(3)">3</div>
+            <div id="s4" class="cycle" onclick="cycle(4)">4</div>
+        </div>
+        <div class="cycleHolder">
+            <div>2020</div>
+            <div id="s5" class="cycle" onclick="cycle(5)">2</div>
+        </div>
+        <div class="cycleHolder">
+            <div>2021</div>
+            <div id="s6" class="cycle selected" onclick="cycle(6)">1</div>
+        </div>
+        <div class="cycleHolder" id="courseSelection" style="display: hidden;">
+            <select onchange="refresh()" class="select-text" name="searchCourse" id="searchCourse"
+                style="background-color:inherit" required>
+                <option value="-1" disabled selected>Selecione o Curso</option>
+                <optgroup label="Curso Novo">
+                    <option value="0">Licenciatura Integral (12A)</option>
+                    <option value="1">Bacharelado (12B)</option>
+                    <option value="2">Licenciatura Noturno (104A)</option>
+                </optgroup>
+                <optgroup label="Curso Antigo">
+                    <option value="3">Licenciatura Integral (12D)</option>
+                    <option value="4">Bacharelado (12B)</option>
+                    <option value="5">Liceniatura e Bacharelado (12E)</option>
+                    <option value="6">Licenciatura Noturno (104A)</option>
+                </optgroup>
+
+            </select>
+        </div>
+    </div>
+    <p style="margin: 8px; margin-left: 5vw; font-size: 8pt; padding-bottom: 20px; font-style: italic">Clique nos
+        números para alternar</p>
+    <table id="calendar">
+        <tr>
+            <th>Segundas</th>
+            <th>Terças</th>
+            <th>Quartas</th>
+            <th>Quintas</th>
+            <th>Sextas</th>
+        </tr>
+        <tr id="tableItem"></tr>
+    </table>
+    <table id="calendarNEW" style="display: none;">
+        <tr>
+            <th>1º Semestre</th>
+            <th>2º Semestre</th>
+            <th>3º Semestre</th>
+            <th>4º Semestre</th>
+            <th>5º Semestre</th>
+        </tr>
+        <tr id="tableItemNEW1"></tr>
+        <tr>
+            <th>6º Semestre</th>
+            <th>7º Semestre</th>
+            <th>8º Semestre</th>
+            <th>9º Semestre</th>
+            <th>Optativas</th>
+        </tr>
+        <tr id="tableItemNEW2"></tr>
+    </table>
+
+    <div id="mobile"></div>
+
+    <div id="hv" style="margin-left: 5vw; margin-bottom: 50px;">
+        <h3>Disciplinas com calendário variável</h3>
+        <p style="max-width: 500px;">Os dias da semana em que essas disciplinas são realizadas é variável ou são
+            assíncronas. Confira a ementa de cada uma para saber mais.</p>
+        <div id="td5"></div>
+    </div>
+
+    <div style="margin-left: 5vw; margin-bottom: 50px">
+        <h3>Links Úteis</h3>
+        <p>Abaixo estão alguns links importantes para obter mais informações sobre a oferta das disciplinas.</p>
+        <a class="link" target="_blank" href="https://www.prppg.ufpr.br/siga/">Siga</a>
+        <a class="link" target="_blank" href="https://youtu.be/h5O44OOON64">Tutorial Siga</a>
+        <a class="link" target="_blank" href="http://www.quimica.ufpr.br/paginas/graduacao/ofertas-2021-1s/">Fichas das
+            disciplinas</a>
+    </div>
+    <p style="margin-left: 5vw; font-size: 10pt;">
+        Por algum motivo, em dispositivos móveis as fichas não estão abrindo corretamente. Caso isso aconteça, segure no
+        botão e aperte para abrir em uma nova guia.
+        <br><br>
+        Notou algum erro no site? Entre em contato através de nossas redes sociais ou <a
+            href="mailto:caquimprensa@gmail.com">email</a>!
+        <br>
+        Desenvolvido por <a href="mailto:vicenteparmigiani@ufpr.br">Vicente K. Parmigiani</a>, 2021.
+    </p>
+    <br>
+    </div>
+
+    <!-- Search engine -->
+    <div id="searchEngine" class="hidden">
+        <span class="material-icons" style="position: absolute; top: 5vw; right: 5vw; cursor: pointer;"
+            onclick="searchStart()">
+            close
+        </span>
+        <h1>Pesquisar</h1>
+        <p style="margin: 0;">Busque disciplinas, professores e departamentos a partir do período de oferta desejado.
+        </p>
+        <br>
+        <div id="searchBox">
+            <span class="material-icons" style="color: hsl(0deg, 0%, 20%);">
+                search
+            </span>
+            <input onkeyup="search()" type="text" id="searchField" autocomplete="off" autocorrect="off"
+                placeholder="O que você está buscando?">
+            <div id="searchFilters">
+                <div class="searchCat">
+                    <select class="select-text" name="searchType" id="searchType" required>
+                        <optgroup label="Categoria">
+                            <option value="nome" selected>Nome da disciplina</option>
+                            <option value="codigo">Código</option>
+                            <option value="prof">Professor</option>
+                            <option value="dep">Departamento</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="searchCat">
+                    <select class="select-text" name="searchPeriod" id="searchPeriod" required>
+                        <optgroup label="Período de Oferta">
+                            <option value=6 selected>2021/1</option>
+                            <option value=5>2020/1</option>
+                            <option value=4>4º Ciclo PE</option>
+                            <option value=3>3º Ciclo PE</option>
+                            <option value=2>2º Ciclo PE</option>
+                            <option value=1>1º Ciclo PE</option>
+                        </optgroup>
+                    </select>
                 </div>
             </div>
-            <div id="searchResults">
-
-            </div>
         </div>
+        <div id="searchResults">
 
-        <div id="popup"></div>
-        <img src="files/Logo.png" width="80px" height="80px" id="logo" alt="Logo CAQuí">
+        </div>
+    </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script type="text/javascript" src="content.js"></script>
-        <script type="text/javascript" src="searchEngine.js"></script>
-        <script type="text/javascript" src="script.js"></script>
-    </body>
+    <div id="darkBg">
+        <div id="selectCoursePopUp">
+            <img src="files/featureimg.svg"
+                alt="Imagem de uma pessoa estudando química pelo computador através de um vídeo." id="featureImg">
+            <h2>Preparado para mais um semestre letivo?</h2>
+            <p>Em breve começaremos um novo período de aulas, então reunimos aqui as matérias que serão ofertadas. Para
+                começar, <strong>selecione seu curso</strong> (você pode mudar isso depois):</p>
+            <div class="cycleHolder" id="courseSelection" style="max-width: 190px;">
+                <select onchange="refresh()" class="select-text" name="searchCourseP" id="searchCourseP"
+                    style="background-color:inherit" required>
+                    <option value="-1" disabled selected>Selecione o Curso</option>
+                    <optgroup label="Curso Novo">
+                        <option value="0">Licenciatura Integral (12A)</option>
+                        <option value="1">Bacharelado (12B)</option>
+                        <option value="2">Licenciatura Noturno (104A)</option>
+                    </optgroup>
+                    <optgroup label="Curso Antigo">
+                        <option value="3">Licenciatura Integral (12D)</option>
+                        <option value="4">Bacharelado (12B)</option>
+                        <option value="5">Liceniatura e Bacharelado (12E)</option>
+                        <option value="6">Licenciatura Noturno (104A)</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="cycleHolder startButton" id="startButton">Ver disciplinas</div>
+            <section style="text-align: left;">
+                <h3>O que há de novo?</h3>
+                <ul>
+                    <li><strong>Pesquisa:</strong> Você pode pesquisar as disciplinas por nome, código, professor responsável ou
+                        departamento, de
+                        acordo com o período de oferta. Para começar clique em pesquisar no menu.</li>
+                    <li><strong>Nova organização:</strong> As disciplinas serão mostradas de acordo com o curso e período para os novos
+                        períodos
+                        de oferta. Veja períodos passados e troque o curso que deseja ver no menu.</li>
+                </ul>
+            </section>
+        </div>
+        <br><br><br><br>
+    </div>
+
+    <div id="popup"></div>
+    <img src="files/Logo.png" width="80px" height="80px" id="logo" alt="Logo CAQuí">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="content.js"></script>
+    <script type="text/javascript" src="searchEngine.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
 </html>

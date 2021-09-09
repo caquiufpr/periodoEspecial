@@ -2632,6 +2632,6 @@ const cycle6 = [
         "fim": "-",
         "obs": "Apenas um aviso com relação à diciplina, sua oferta não é garantida.",
         "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/aviso-cq057-introducao-a-quimica-nuclear.docx",
-        "per": [9]
+        "per": [10,10,10,10,10,10,10]
     }
 ]

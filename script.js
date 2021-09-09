@@ -1,5 +1,5 @@
 const diasDaSemana = ["Segundas", "Terças", "Quartas", "Quintas", "Sextas", "Dias Variados"];
-const diasDaSemanaA = ["S","T","Q","Q","S"];
+const diasDaSemanaA = ["S", "T", "Q", "Q", "S"];
 const numberOfCycles = 6;
 let selectedCycle = 6;
 let hue = -20;
@@ -50,6 +50,7 @@ function inflateMobile() {
     }
 }
 
+window.scrollTo(0, 0);
 inflateMobile();
 
 function inflateMobileNEW() {
@@ -59,7 +60,7 @@ function inflateMobileNEW() {
         for (let i = 0; i <= 8; i++) {
             const mcell = document.createElement('div');
             mcell.id = "mcNEW" + i;
-            mcell.innerHTML += "<h4>" + (i+1) + "º Semestre</h4>"
+            mcell.innerHTML += "<h4>" + (i + 1) + "º Semestre</h4>"
             spaceToFillM.appendChild(mcell);
         }
 
@@ -79,16 +80,17 @@ function inflateScreen(c) {
     if (window.innerWidth / window.innerHeight > 1) {
         // Clear
         for (let i = 0; i <= 5; i++) {
-            document.getElementById("td"+i).innerHTML = "";
+            document.getElementById("td" + i).innerHTML = "";
         }
-        
+
         for (let i = 0; i <= 9; i++) {
-            document.getElementById("tdNEW"+i).innerHTML = "";
+            document.getElementById("tdNEW" + i).innerHTML = "";
         }
 
         document.getElementById("calendar").style.display = "block";
         document.getElementById("calendarNEW").style.display = "none";
         document.getElementById('hv').style.display = "block";
+        document.getElementById('courseSelection').style.display = 'none';
 
         switch (c) {
             case 1:
@@ -96,7 +98,7 @@ function inflateScreen(c) {
                     // Append to table
                     for (let i = 0; i < d.dias.length; i++) {
                         const block = buildBlock(d);
-                        document.getElementById('td'+d.dias[i]).appendChild(block);
+                        document.getElementById('td' + d.dias[i]).appendChild(block);
                     }
                 })
                 break;
@@ -105,7 +107,7 @@ function inflateScreen(c) {
                     // Append to table
                     for (let i = 0; i < d.dias.length; i++) {
                         const block = buildBlock(d);
-                        document.getElementById('td'+d.dias[i]).appendChild(block);
+                        document.getElementById('td' + d.dias[i]).appendChild(block);
                     }
                 })
                 break;
@@ -114,7 +116,7 @@ function inflateScreen(c) {
                     // Append to table
                     for (let i = 0; i < d.dias.length; i++) {
                         const block = buildBlock(d);
-                        document.getElementById('td'+d.dias[i]).appendChild(block);
+                        document.getElementById('td' + d.dias[i]).appendChild(block);
                     }
                 })
                 break;
@@ -123,7 +125,7 @@ function inflateScreen(c) {
                     // Append to table
                     for (let i = 0; i < d.dias.length; i++) {
                         const block = buildBlock(d);
-                        document.getElementById('td'+d.dias[i]).appendChild(block);
+                        document.getElementById('td' + d.dias[i]).appendChild(block);
                     }
                 })
                 break;
@@ -135,7 +137,7 @@ function inflateScreen(c) {
                     // Append to table
                     for (let i = 0; i < d.per.length; i++) {
                         const block = buildBlock(d);
-                        document.getElementById('tdNEW'+d.per[i]).appendChild(block);
+                        document.getElementById('tdNEW' + d.per[i]).appendChild(block);
                     }
                 })
                 break;
@@ -143,14 +145,16 @@ function inflateScreen(c) {
                 document.getElementById("calendar").style.display = "none";
                 document.getElementById("calendarNEW").style.display = "block";
                 document.getElementById('hv').style.display = "none";
+                document.getElementById('courseSelection').style.display = 'flex';
                 cycle6.map(d => {
                     // Append to table
                     for (let i = 0; i < d.per.length; i++) {
-                        const block = buildBlock(d);
-                        document.getElementById('tdNEW'+d.per[i]).appendChild(block);
+                        if (d.per[i] > 0 && i == (document.getElementById("searchCourse").value)) {
+                            const block = buildBlock(d);
+                            document.getElementById('tdNEW' + (d.per[i] - 1)).appendChild(block);
+                        }
                     }
                 })
-                popup("As disciplinas para este período ainda estão sendo adicionadas.");
                 break;
             default:
                 break;
@@ -159,8 +163,9 @@ function inflateScreen(c) {
         document.getElementById('calendar').style.display = "none";
         document.getElementById("calendarNEW").style.display = "none";
         document.getElementById('hv').style.display = "none";
+        document.getElementById('courseSelection').style.display = 'none';
 
-        if (c != 5) {
+        if (c < 5) {
             inflateMobile();
         } else {
             inflateMobileNEW();
@@ -172,7 +177,7 @@ function inflateScreen(c) {
                     // Append to window
                     for (let i = 0; i < d.dias.length; i++) {
                         const block = buildBlock(d);
-                        document.getElementById('mc'+d.dias[i]).appendChild(block);
+                        document.getElementById('mc' + d.dias[i]).appendChild(block);
                     }
                 })
                 break;
@@ -181,7 +186,7 @@ function inflateScreen(c) {
                     // Append to window
                     for (let i = 0; i < d.dias.length; i++) {
                         const block = buildBlock(d);
-                        document.getElementById('mc'+d.dias[i]).appendChild(block);
+                        document.getElementById('mc' + d.dias[i]).appendChild(block);
                     }
                 })
                 break;
@@ -190,7 +195,7 @@ function inflateScreen(c) {
                     // Append to window
                     for (let i = 0; i < d.dias.length; i++) {
                         const block = buildBlock(d);
-                        document.getElementById('mc'+d.dias[i]).appendChild(block);
+                        document.getElementById('mc' + d.dias[i]).appendChild(block);
                     }
                 })
                 break;
@@ -199,7 +204,7 @@ function inflateScreen(c) {
                     // Append to window
                     for (let i = 0; i < d.dias.length; i++) {
                         const block = buildBlock(d);
-                        document.getElementById('mc'+d.dias[i]).appendChild(block);
+                        document.getElementById('mc' + d.dias[i]).appendChild(block);
                     }
                 })
                 break;
@@ -208,28 +213,38 @@ function inflateScreen(c) {
                     // Append to window
                     for (let i = 0; i < d.per.length; i++) {
                         const block = buildBlock(d);
-                        document.getElementById('mcNEW'+d.per[i]).appendChild(block);
+                        document.getElementById('mcNEW' + d.per[i]).appendChild(block);
                     }
                 })
                 break;
             case 6:
+                document.getElementById('courseSelection').style.display = 'flex';
                 cycle6.map(d => {
                     // Append to window
                     for (let i = 0; i < d.per.length; i++) {
-                        const block = buildBlock(d);
-                        document.getElementById('mcNEW'+d.per[i]).appendChild(block);
+                        if (d.per[i] > 0 && i == (document.getElementById("searchCourse").value)) {
+                            const block = buildBlock(d);
+                            document.getElementById('mcNEW' + (d.per[i] - 1)).appendChild(block);
+                        }
                     }
                 })
-                popup("As disciplinas para este período ainda estão sendo adicionadas.");
                 break;
             default:
                 break;
         }
-        
+
     }
 }
 
 inflateScreen(selectedCycle);
+document.getElementById("body").style.overflow = "auto";
+setTimeout(() => {
+    window.scrollTo(0,0);
+}, 30)
+setTimeout(() => {
+    document.getElementById("body").style.overflow = "hidden";
+}, 60)
+
 
 //popup("As disciplinas para o Calendário Acadêmico de 2020.1 ainda estão sendo adicionadas.")
 
@@ -294,12 +309,12 @@ function buildBlock(d) {
     if (d.dias.includes(5)) {
         hr.style.display = "none";
     }
-    
+
     // Link to page
     if (d.link) {
         link.innerHTML = "Ver ficha";
-        link.href = d.link;   
-        link.target = "_blank";   
+        link.href = d.link;
+        link.target = "_blank";
     } else {
         link.style.display = "none";
     }
@@ -350,7 +365,7 @@ function buildBlock(d) {
 function cycle(c) {
     for (let i = 1; i <= numberOfCycles; i++) {
         if (c <= numberOfCycles && c != selectedCycle) {
-        document.getElementById("s"+i).className = "cycle";
+            document.getElementById("s" + i).className = "cycle";
         }
     }
 
@@ -358,7 +373,7 @@ function cycle(c) {
         case 1:
             if (selectedCycle != 1) {
                 inflateScreen(1);
-                document.getElementById("s"+c).className = "cycle selected";
+                document.getElementById("s" + c).className = "cycle selected";
             } else {
                 popup("Esse ciclo já está selecionado.");
             }
@@ -366,7 +381,7 @@ function cycle(c) {
         case 2:
             if (selectedCycle != 2) {
                 inflateScreen(2);
-                document.getElementById("s"+c).className = "cycle selected";
+                document.getElementById("s" + c).className = "cycle selected";
             } else {
                 popup("Esse ciclo já está selecionado.");
             }
@@ -374,7 +389,7 @@ function cycle(c) {
         case 3:
             if (selectedCycle != 3) {
                 inflateScreen(3);
-                document.getElementById("s"+c).className = "cycle selected";
+                document.getElementById("s" + c).className = "cycle selected";
             } else {
                 popup("Esse ciclo já está selecionado.");
             }
@@ -382,7 +397,7 @@ function cycle(c) {
         case 4:
             if (selectedCycle != 4) {
                 inflateScreen(4);
-                document.getElementById("s"+c).className = "cycle selected";
+                document.getElementById("s" + c).className = "cycle selected";
             } else {
                 popup("Esse ciclo já está selecionado.");
             }
@@ -390,7 +405,7 @@ function cycle(c) {
         case 5:
             if (selectedCycle != 5) {
                 inflateScreen(5);
-                document.getElementById("s"+c).className = "cycle selected";
+                document.getElementById("s" + c).className = "cycle selected";
             } else {
                 popup("Esse ciclo já está selecionado.");
             }
@@ -398,11 +413,10 @@ function cycle(c) {
         case 6:
             if (selectedCycle != 6) {
                 inflateScreen(6);
-                document.getElementById("s"+c).className = "cycle selected";
+                document.getElementById("s" + c).className = "cycle selected";
             } else {
                 popup("Esse ciclo já está selecionado.");
             }
-            popup("As disciplinas para este período ainda estão sendo adicionadas.");
             break;
         default:
             break;
@@ -432,7 +446,7 @@ function popup(text) {
     const popup = document.createElement('div');
     popup.innerHTML = text;
     popup.className = "box";
-    popup.style.maxWidth = "300px";
+    popup.style.maxWidth = "50vw";
     popup.style.fontWeight = "normal"
     popup.style.backgroundColor = "#303030";
     popup.style.color = "white"
@@ -446,7 +460,7 @@ function popup(text) {
         popup.style.display = "none"
     }, 3500)
 
-    popup.onclick = () => {popup.style.display = "none"}
+    popup.onclick = () => { popup.style.display = "none" }
 
     document.querySelector("#popup").append(popup);
 }
@@ -459,3 +473,16 @@ document.getElementById("logo").addEventListener("click", () => {
         click = 0;
     }
 })
+
+function refresh() {
+    inflateScreen(selectedCycle);
+    const sb = document.getElementById('startButton');
+    sb.style.filter = "saturate(1)";
+    sb.style.cursor = "pointer";
+    sb.addEventListener("click", () => {
+        document.getElementById('body').style.overflow = "auto";
+        document.getElementById('darkBg').remove();
+    })
+    document.getElementById("searchCourse").selectedIndex = document.getElementById("searchCourseP").selectedIndex;
+    inflateScreen(selectedCycle);
+}
