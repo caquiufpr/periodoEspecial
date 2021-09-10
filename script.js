@@ -2,6 +2,7 @@ const diasDaSemana = ["Segundas", "Terças", "Quartas", "Quintas", "Sextas", "Di
 const diasDaSemanaA = ["S", "T", "Q", "Q", "S"];
 const numberOfCycles = 6;
 let selectedCycle = 6;
+let course = getCookie("course");
 let hue = -20;
 let mis = "<i class=\"menuIcons material-icons\" md-24 md-light style=\"vertical-align: middle;padding: 5px;\">";
 let mif = "</i> ";
@@ -239,14 +240,20 @@ function inflateScreen(c) {
 inflateScreen(selectedCycle);
 document.getElementById("body").style.overflow = "auto";
 setTimeout(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
 }, 30)
 setTimeout(() => {
     document.getElementById("body").style.overflow = "hidden";
 }, 60)
 
+if (course != '') {
+    document.getElementById("searchCourse").selectedIndex = course;
+    console.log("Curso selecionado: " + course);
+    document.getElementById('body').style.overflow = "auto";
+    document.getElementById('darkBg').remove();
+}
 
-//popup("As disciplinas para o Calendário Acadêmico de 2020.1 ainda estão sendo adicionadas.")
+popup("As disciplinas para o Calendário Acadêmico de 2021.1 ainda estão sendo adicionadas.")
 
 function buildBlock(d) {
     // Create elements
@@ -475,7 +482,6 @@ document.getElementById("logo").addEventListener("click", () => {
 })
 
 function refresh() {
-    inflateScreen(selectedCycle);
     const sb = document.getElementById('startButton');
     sb.style.filter = "saturate(1)";
     sb.style.cursor = "pointer";
@@ -483,6 +489,33 @@ function refresh() {
         document.getElementById('body').style.overflow = "auto";
         document.getElementById('darkBg').remove();
     })
-    document.getElementById("searchCourse").selectedIndex = document.getElementById("searchCourseP").selectedIndex;
+    if (course == '') {
+        course = document.getElementById("searchCourseP").selectedIndex;
+        document.getElementById("searchCourse").selectedIndex = course;
+    }
+    setCookie("course", course, 20);
     inflateScreen(selectedCycle);
+}
+
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
 }
