@@ -251,6 +251,8 @@ if (course != '') {
     console.log("Curso selecionado: " + course);
     document.getElementById('body').style.overflow = "auto";
     document.getElementById('darkBg').remove();
+} else {
+    document.getElementById('body').style.overflow = 'hidden';
 }
 
 popup("As disciplinas para o Calendário Acadêmico de 2021.1 ainda estão sendo adicionadas.")
