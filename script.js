@@ -238,13 +238,6 @@ function inflateScreen(c) {
 }
 
 inflateScreen(selectedCycle);
-// document.getElementById("body").style.overflow = "auto";
-// setTimeout(() => {
-//     window.scrollTo(0, 0);
-// }, 30)
-// setTimeout(() => {
-//     document.getElementById("body").style.overflow = "hidden";
-// }, 60)
 
 if (course != '') {
     document.getElementById("searchCourse").selectedIndex = course;
@@ -252,7 +245,12 @@ if (course != '') {
     document.getElementById('body').style.overflow = "auto";
     document.getElementById('darkBg').remove();
 } else {
-    document.getElementById('body').style.overflow = 'hidden';
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+    }, 30)
+    setTimeout(() => {
+        document.getElementById("body").style.overflow = "hidden";
+    }, 60)
 }
 
 popup("As disciplinas para o Calendário Acadêmico de 2021.1 ainda estão sendo adicionadas.")
