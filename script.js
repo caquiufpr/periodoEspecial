@@ -494,6 +494,8 @@ function refresh() {
     if (course == '') {
         course = document.getElementById("searchCourseP").selectedIndex;
         document.getElementById("searchCourse").selectedIndex = course;
+    } else {
+        course = document.getElementById("searchCourse").selectedIndex;
     }
     setCookie("course", course, 20);
     inflateScreen(selectedCycle);
