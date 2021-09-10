@@ -485,17 +485,19 @@ document.getElementById("logo").addEventListener("click", () => {
 
 function refresh() {
     const sb = document.getElementById('startButton');
-    sb.style.filter = "saturate(1)";
-    sb.style.cursor = "pointer";
-    sb.addEventListener("click", () => {
-        document.getElementById('body').style.overflow = "auto";
-        document.getElementById('darkBg').remove();
-    })
-    if (course == '') {
-        course = document.getElementById("searchCourseP").selectedIndex;
-        document.getElementById("searchCourse").selectedIndex = course;
-    } else {
-        course = document.getElementById("searchCourse").selectedIndex;
+    if (sb) {
+        sb.style.filter = "saturate(1)";
+        sb.style.cursor = "pointer";
+        sb.addEventListener("click", () => {
+            document.getElementById('body').style.overflow = "auto";
+            document.getElementById('darkBg').remove();
+        })
+        if (course == '') {
+            course = document.getElementById("searchCourseP").selectedIndex;
+            document.getElementById("searchCourse").selectedIndex = course;
+        } else {
+            course = document.getElementById("searchCourse").selectedIndex;
+        }
     }
     setCookie("course", course, 20);
     inflateScreen(selectedCycle);
