@@ -492,12 +492,12 @@ function refresh() {
             document.getElementById('body').style.overflow = "auto";
             document.getElementById('darkBg').remove();
         })
-        if (course == '') {
-            course = document.getElementById("searchCourseP").selectedIndex;
-            document.getElementById("searchCourse").selectedIndex = course;
-        } else {
-            course = document.getElementById("searchCourse").selectedIndex;
-        }
+    }
+    if (course == '') {
+        course = document.getElementById("searchCourseP").selectedIndex;
+        document.getElementById("searchCourse").selectedIndex = course;
+    } else {
+        course = document.getElementById("searchCourse").selectedIndex;
     }
     setCookie("course", course, 20);
     inflateScreen(selectedCycle);
