@@ -238,13 +238,13 @@ function inflateScreen(c) {
 }
 
 inflateScreen(selectedCycle);
-document.getElementById("body").style.overflow = "auto";
-setTimeout(() => {
-    window.scrollTo(0, 0);
-}, 30)
-setTimeout(() => {
-    document.getElementById("body").style.overflow = "hidden";
-}, 60)
+// document.getElementById("body").style.overflow = "auto";
+// setTimeout(() => {
+//     window.scrollTo(0, 0);
+// }, 30)
+// setTimeout(() => {
+//     document.getElementById("body").style.overflow = "hidden";
+// }, 60)
 
 if (course != '') {
     document.getElementById("searchCourse").selectedIndex = course;
