@@ -244,6 +244,7 @@ if (course != '') {
     console.log("Curso selecionado: " + course);
     document.getElementById('body').style.overflow = "auto";
     document.getElementById('darkBg').remove();
+    refresh();
 } else {
     setTimeout(() => {
         window.scrollTo(0, 0);
