@@ -239,7 +239,7 @@ function inflateScreen(c) {
 
 inflateScreen(selectedCycle);
 
-if (course != '') {
+if (course != '' && course != '0') {
     document.getElementById("searchCourse").selectedIndex = course;
     console.log("Curso selecionado: " + course);
     document.getElementById('body').style.overflow = "auto";
