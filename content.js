@@ -3703,5 +3703,599 @@ const cycle6 = [
             0,
             0
         ]
+    },
+    {
+        "codigo": "CQ018",
+        "nome": "Química Toxicológica",
+        "prof": "Rilton Alves de Freitas",
+        "dep": "DQUI",
+        "horario": "15h30 17h30",
+        "dias": [
+            1
+        ],
+        "inicio": "21/09",
+        "fim": "21/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq018-quimica_toxicologica-rilton-ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ052",
+        "nome": "Físico-Química Experimental III",
+        "prof": "Regina Maria Queiroz de Mello",
+        "dep": "DQUI",
+        "horario": "8h30 10h30",
+        "dias": [
+            4
+        ],
+        "inicio": "24/09",
+        "fim": "10/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq052-cq244-regina-ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ244",
+        "nome": "Físico-Química Experimental IV",
+        "prof": "Regina Maria Queiroz de Mello",
+        "dep": "DQUI",
+        "horario": "21h 23h",
+        "dias": [
+            1
+        ],
+        "inicio": "21/09",
+        "fim": "14/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq052-cq244-regina-ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ246/115/305",
+        "nome": "Química Quântica",
+        "prof": "Joaquim Delphino Da Motta Neto",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [
+            0,
+            3
+        ],
+        "inicio": "20/09",
+        "fim": "23/12",
+        "obs": "Período noturno em horários diferentes para os dois dias.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq115-cq246-cq305-quantica-joaquim.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ115/CQ246",
+        "nome": "Química Quântica",
+        "prof": "Diego Guedes-Sobrinho",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [
+            1,
+            3
+        ],
+        "inicio": "21/09",
+        "fim": "16/12",
+        "obs": "Durante a tarde em dois horários distintos nos dois dias.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq115-cq246-diurno-diego-ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ116",
+        "nome": "Espectroscopia Óptica",
+        "prof": "Harley Paiva Martins Filho",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [
+            5
+        ],
+        "inicio": "20/09",
+        "fim": "22/12",
+        "obs": "Aulas disponibilizadas em vídeo com provas síncronas.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq116_espectroscopia_optica_prof-_harley_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ118",
+        "nome": "Termodinâmica e Cinética Experimental",
+        "prof": "Liliana Micaroni",
+        "dep": "DQUI",
+        "horario": "21h 22h",
+        "dias": [
+            3
+        ],
+        "inicio": "23/09",
+        "fim": "09/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq118-ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ170/CQ297",
+        "nome": "Operações Unitárias em Química Industrial I",
+        "prof": "Izabel Cristina Riegel Vidotti Miyata",
+        "dep": "DQUI",
+        "horario": "13h30 17h30",
+        "dias": [
+            4
+        ],
+        "inicio": "24/09",
+        "fim": "03/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq170-cq297-sexta-izabel-ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ238",
+        "nome": "Físico-Química I (Diurno)",
+        "prof": "Marcio Vidotti",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [
+            1
+        ],
+        "inicio": "21/09",
+        "fim": "30/11",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq238-fq1_cq238_diurno_vidotti-ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ238",
+        "nome": "Físico-Química I (Noturno)",
+        "prof": "Marcio Vidotti",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [
+            2
+        ],
+        "inicio": "22/09",
+        "fim": "01/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq238-noturno_-vidotti-ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ050/CQ239",
+        "nome": "Físico-Química Experimental I",
+        "prof": "Regina Maria Queiroz de Mello",
+        "dep": "DQUI",
+        "horario": "15h30 17h30",
+        "dias": [
+            0
+        ],
+        "inicio": "20/09",
+        "fim": "13/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq239-cq050-d-regina-ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ117/CQ239",
+        "nome": "Físico-Química Experimental I",
+        "prof": "Harley Paiva Martins Filho",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [
+            2
+        ],
+        "inicio": "22/09",
+        "fim": "08/12",
+        "obs": "Encontros síncronos voltados a tira-dúvidas.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq239-cq117-n-harley-ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ240",
+        "nome": "Físico-Química II",
+        "prof": "Eduardo Lemos de Sá",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [
+            1,
+            3
+        ],
+        "inicio": "21/09",
+        "fim": "21/12",
+        "obs": "Aulas com horários diferentes no período da manhã.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq240_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ243",
+        "nome": "Físico-Química IV",
+        "prof": "Diego Guedes-Sobrinho",
+        "dep": "DQUI",
+        "horario": "21h 23h",
+        "dias": [
+            4
+        ],
+        "inicio": "24/09",
+        "fim": "10/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq243-fq4_2021-1-diego-ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ302",
+        "nome": "Termodinâmica e Eletroquímica",
+        "prof": "Eduardo Lemos de Sá",
+        "dep": "DQUI",
+        "horario": "13h30 15h30",
+        "dias": [
+            1,
+            3
+        ],
+        "inicio": "21/09",
+        "fim": "21/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq302_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ211",
+        "nome": "Química Geral",
+        "prof": "Shirley Nakagaki e Aldo J. G. Zarbin",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [
+            0,
+            2
+        ],
+        "inicio": "20/09",
+        "fim": "20/12",
+        "obs": "Segunda-feira 13h30 – 15h30 e quartas-feiras 07h30 as 09h30",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq211-geral-shirley_aldo_diurno-ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ211",
+        "nome": "Química Geral",
+        "prof": "Flávio Massao Matsumoto",
+        "dep": "DQUI",
+        "horario": "21h 23h",
+        "dias": [
+            1
+        ],
+        "inicio": "21/09",
+        "fim": "21/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq211-geral_flavio_noturno-ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ138/211",
+        "nome": "Química Geral",
+        "prof": "Ronny Rocha Ribeiro",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [
+            5
+        ],
+        "inicio": "20/09",
+        "fim": "17/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq211-geral_ronny_noturno-ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ212",
+        "nome": "Química Geral Experimental",
+        "prof": "Márcio Peres de Araujo",
+        "dep": "DQUI",
+        "horario": "19h 23h",
+        "dias": [
+            4
+        ],
+        "inicio": "24/09",
+        "fim": "17/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq212_2021_noturno.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ212",
+        "nome": "Química Geral Experimental",
+        "prof": "Aldo J. G. Zarbin e Herbert Winnischofer",
+        "dep": "DQUI",
+        "horario": "? ?",
+        "dias": [
+            3
+        ],
+        "inicio": "23/09",
+        "fim": "17/12",
+        "obs": "Não encontrei os horários",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq212_geral_experimental_aldo_herbert_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ212",
+        "nome": "Química Geral Experimental",
+        "prof": "Shirley Nakagaki, Flávio Matsumoto e Tatiana Renata Gomes Simões",
+        "dep": "DQUI",
+        "horario": "7h30 11h30",
+        "dias": [
+            0
+        ],
+        "inicio": "20/09",
+        "fim": "20/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq212_geral_experimental_shirley_flavio_tatiana_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ212",
+        "nome": "Química Geral Experimental",
+        "prof": "Shirley Nakagaki, Flávio Matsumoto e Tatiana Renata Gomes Simões",
+        "dep": "DQUI",
+        "horario": "7h30 11h30",
+        "dias": [
+            1
+        ],
+        "inicio": "21/09",
+        "fim": "21/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq212_geral_experimental_shirley_flavio_tatiana_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ213",
+        "nome": "História da Química",
+        "prof": "Patricio Peralta Zamora",
+        "dep": "DQUI",
+        "horario": "13h30 15h30",
+        "dias": [
+            3
+        ],
+        "inicio": "20/09",
+        "fim": "18/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq213_historia_quimica_patricio_diurno_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ213",
+        "nome": "História da Química",
+        "prof": "Patricio Peralta Zamora",
+        "dep": "DQUI",
+        "horario": "21h 23h",
+        "dias": [
+            0
+        ],
+        "inicio": "20/09",
+        "fim": "18/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq213_historia_quimica_patricio_noturno_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ224",
+        "nome": "Química Inorgânica IV",
+        "prof": "Aldo Zarbin / Herbert Winnischofer",
+        "dep": "DQUI",
+        "horario": "? ?",
+        "dias": [
+            0
+        ],
+        "inicio": "20/09",
+        "fim": "20/12",
+        "obs": "Diurno",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/224_diurno_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ224",
+        "nome": "Química Inorgânica IV",
+        "prof": "Aldo Zarbin / Herbert Winnischofer",
+        "dep": "DQUI",
+        "horario": "? ?",
+        "dias": [
+            2
+        ],
+        "inicio": "22/09",
+        "fim": "22/12",
+        "obs": "Noturno",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/224_noturno_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ153",
+        "nome": "Tópicos Especiais em Química Inorgânica: Fundamentos da Química de Organometálicos",
+        "prof": "Jaísa Fernandes Soares",
+        "dep": "DQUI",
+        "horario": "19h 21h",
+        "dias": [
+            3
+        ],
+        "inicio": "23/09",
+        "fim": "23/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq153_organometalicos_setembro2021_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ222",
+        "nome": "Química Inorgânica II",
+        "prof": "Fábio Souza Nunes",
+        "dep": "DQUI",
+        "horario": "13h30 15h30",
+        "dias": [
+            2
+        ],
+        "inicio": "22/09",
+        "fim": "22/12",
+        "obs": "Diurno",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq222_diurno_ficha_2_set_a_dez_2021_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ222",
+        "nome": "Química Inorgânica II",
+        "prof": "Fábio Souza Nunes",
+        "dep": "DQUI",
+        "horario": "19h 21h",
+        "dias": [
+            4
+        ],
+        "inicio": "24/09",
+        "fim": "23/12",
+        "obs": "Noturno",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq222_noturno_ficha_2_set_a_dez_2021_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ228",
+        "nome": "Química Inorgânica Experimental III",
+        "prof": "Fabio Souza Nunes, Herbert Winnischofer e Tatiana Renata Gomes Simões",
+        "dep": "DQUI",
+        "horario": "15h30 17h30",
+        "dias": [
+            4
+        ],
+        "inicio": "24/09",
+        "fim": "22/12",
+        "obs": "Diurno",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq228_ficha2_final_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ228",
+        "nome": "Química Inorgânica Experimental III",
+        "prof": "Fabio Souza Nunes, Herbert Winnischofer e Tatiana Renata Gomes Simões",
+        "dep": "DQUI",
+        "horario": "19h 21h",
+        "dias": [
+            4
+        ],
+        "inicio": "24/09",
+        "fim": "22/12",
+        "obs": "Noturno",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq228_ficha2_final_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ124",
+        "nome": "Fundamentos da Química Inorgânica I",
+        "prof": "Daniel da Silveira Rampon",
+        "dep": "DQUI",
+        "horario": "7h30 9h30",
+        "dias": [
+            4
+        ],
+        "inicio": "20/09",
+        "fim": "18/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq_124_daniel_dp_diurno_sexta_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ231",
+        "nome": "Química Orgânica I",
+        "prof": "Daniel da Silveira Rampon",
+        "dep": "DQUI",
+        "horario": "7h30 9h30",
+        "dias": [
+            4
+        ],
+        "inicio": "20/09",
+        "fim": "18/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq_124_daniel_dp_diurno_sexta_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ125",
+        "nome": "Fundamentos de Química Orgânica II",
+        "prof": "Claudiney Soares Cordeiro",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [
+            1,
+            3
+        ],
+        "inicio": "21/09",
+        "fim": "21/12",
+        "obs": "Aulas com horários diferentes no período da noite.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq125_cq232__atualizado_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ232",
+        "nome": "Química Orgânica II",
+        "prof": "Claudiney Soares Cordeiro",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [
+            1,
+            3
+        ],
+        "inicio": "21/09",
+        "fim": "21/12",
+        "obs": "Aulas com horários diferentes no período da noite.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq125_cq232__atualizado_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ126",
+        "nome": "Fundamentos de Química Orgânica III",
+        "prof": "Daniel da Silveira Rampon",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [
+            0,
+            2
+        ],
+        "inicio": "20/09",
+        "fim": "18/12",
+        "obs": "Aulas com horários diferentes no período da noite.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq126___ficha2_daniel_2021_ajustada_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ233",
+        "nome": "Química Orgânica III",
+        "prof": "Daniel da Silveira Rampon",
+        "dep": "DQUI",
+        "horario": "- -",
+        "dias": [
+            0,
+            2
+        ],
+        "inicio": "20/09",
+        "fim": "18/12",
+        "obs": "Aulas com horários diferentes no período da noite.",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq126___ficha2_daniel_2021_ajustada_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ128/ CQ235",
+        "nome": "Química Orgânica Experimental I",
+        "prof": "Sônia Faria Zawadzki",
+        "dep": "DQUI",
+        "horario": "8h30 9h30",
+        "dias": [
+            0
+        ],
+        "inicio": "22/09",
+        "fim": "22/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq128__turma_quimica___atualizada_ok.pdf",
+        "per": ""
+    },
+    {
+        "codigo": "CQ129/CQ236",
+        "nome": "Química Orgânica Experimental III",
+        "prof": "Caroline Da Ros Montes D’Oca",
+        "dep": "DQUI",
+        "horario": "13h30 17h30",
+        "dias": [
+            3
+        ],
+        "inicio": "23/09",
+        "fim": "16/12",
+        "obs": "",
+        "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq129_carol.pdf",
+        "per": ""
     }
 ]
