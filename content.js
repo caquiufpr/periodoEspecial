@@ -3836,7 +3836,7 @@ const cycle6 = [
       "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq116_espectroscopia_optica_prof-_harley_ok.pdf",
       "per": [
         0,
-        0,
+        9,
         0,
         7,
         7,
