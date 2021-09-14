@@ -2770,7 +2770,7 @@ const cycle6 = [
       ],
       "inicio": "22/09",
       "fim": "18/12",
-      "obs": "Não recomendo. Disciplina assíncrona com alguns seminários.",
+      "obs": "Disciplina assíncrona com alguns seminários.",
       "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/tq_178_1.pdf",
       "per": [
         0,
@@ -2793,7 +2793,7 @@ const cycle6 = [
       ],
       "inicio": "23/09",
       "fim": "16/12",
-      "obs": "Não recomendo. Disciplina assíncrona com alguns seminários.",
+      "obs": "Disciplina assíncrona com alguns seminários.",
       "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/tq_178_2.pdf",
       "per": [
         0,
