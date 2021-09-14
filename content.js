@@ -4609,5 +4609,191 @@ const cycle6 = [
         7,
         0
       ]
+    },
+    {
+      "codigo": "CQ019",
+      "nome": "Cromatografia",
+      "prof": "Bruno da Silva",
+      "dep": "DQUI",
+      "horario": "9h30 11h30",
+      "dias": [
+        2,
+        3
+      ],
+      "inicio": "23/09",
+      "fim": "22/12",
+      "obs": "Horário do Lab varia",
+      "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq019_cromatografia_bruno_ok.pdf",
+      "per": [
+        0,
+        0,
+        0,
+        0,
+        5,
+        9,
+        0
+      ]
+    },
+    {
+      "codigo": "CQ042/CQ218",
+      "nome": "Química Ambiental",
+      "prof": "Marco Tadeu Grassi",
+      "dep": "DQUI",
+      "horario": "19h 21h",
+      "dias": [
+        5
+      ],
+      "inicio": "20/09",
+      "fim": "?",
+      "obs": "",
+      "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq042_218_ambiental_marco_grassi_ok.pdf",
+      "per": [
+        9,
+        8,
+        6,
+        0,
+        0,
+        0,
+        7
+      ]
+    },
+    {
+      "codigo": "CQ214/CQ119",
+      "nome": "Fundamentos da Química Analítica I",
+      "prof": "Marco Tadeu Grassi",
+      "dep": "DQUI",
+      "horario": "7h30 11h30",
+      "dias": [
+        1
+      ],
+      "inicio": "20/09",
+      "fim": "23/12",
+      "obs": "",
+      "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq214_119_analitica_i_marco_diurno_ok.pdf",
+      "per": [
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "codigo": "CQ214/CQ119",
+      "nome": "Fundamentos da Química Analítica I",
+      "prof": "Frederico Luis Felipe Soares",
+      "dep": "DQUI",
+      "horario": "19h 32h",
+      "dias": [
+        0
+      ],
+      "inicio": "20/09",
+      "fim": "23/12",
+      "obs": "",
+      "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq214-cq119_analitica_i_fred_noturno_ok.pdf",
+      "per": [
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "codigo": "CQ215/CQ120",
+      "nome": "Fundamentos da Química Analítica II",
+      "prof": "Clarice Dias Brito do Amaral, Dênio Emanuel Pires Souto, Gilberto Abate, Noemi Nagata,\nPatricio G. Peralta-Zamora",
+      "dep": "DQUI",
+      "horario": "- -",
+      "dias": [
+        0,
+        3
+      ],
+      "inicio": "20/09",
+      "fim": "23/12",
+      "obs": "",
+      "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq215_120_analitica_ii_noturno_ok.pdf",
+      "per": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5
+      ]
+    },
+    {
+      "codigo": "CQ215/CQ120",
+      "nome": "Química Analítica II",
+      "prof": "Clarice Dias Britto do Amaral, Dênio Emanuel Pires Souto, Gilberto Abate, Noemi Nagata, Patricio Peralta-Zamora.",
+      "dep": "DQUI",
+      "horario": "- -",
+      "dias": [
+        3
+      ],
+      "inicio": "23/09",
+      "fim": "23/12",
+      "obs": "",
+      "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq215_analitica_ii_diurno_ok.pdf",
+      "per": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5
+      ]
+    },
+    {
+      "codigo": "CQ216/121",
+      "nome": "Química Analítica Instrumental I",
+      "prof": "Luiz Humberto Marcolino Junior / Márcio Fernando Bergamini",
+      "dep": "DQUI",
+      "horario": "- -",
+      "dias": [
+        5
+      ],
+      "inicio": "22/09",
+      "fim": "22/12",
+      "obs": "Duas turmas com horários variados. Leia a ficha.",
+      "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq216_121_instrumental_i_marcio_luiz_ok.pdf",
+      "per": [
+        4,
+        4,
+        7,
+        5,
+        5,
+        5,
+        7
+      ]
+    },
+    {
+      "codigo": "CQ280",
+      "nome": "Tópicos Especiais em Química Analítica I – Fundamentos Analíticos de Espectrometria de Massas",
+      "prof": "",
+      "dep": "DQUI",
+      "horario": "- -",
+      "dias": [
+        1
+      ],
+      "inicio": "21/09",
+      "fim": "21/12",
+      "obs": "",
+      "link": "http://www.quimica.ufpr.br/paginas/graduacao/wp-content/uploads/sites/16/2021/08/cq280_topicos_espectrometria_massas_bruno_ok.pdf",
+      "per": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
     }
   ]
